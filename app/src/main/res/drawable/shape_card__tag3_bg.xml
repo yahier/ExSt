@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 我的和更多中的布局 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#C6DB24" />
+
+    <corners android:radius="32dp" />
+
+</shape>

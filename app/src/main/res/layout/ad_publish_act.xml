@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvCommit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/linImg"
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_et_bg_fafafa">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_ad_upload"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="点击上传广告图"
+                        android:textColor="#a19c98"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tvTipUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="3dp"
+                        android:text="请上传640*306分辨率，jpg/png格式的广告图。"
+                        android:textColor="#a19c98"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+
+            <EditText
+                android:id="@+id/inputLink"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_et_bg_fafafa"
+                android:gravity="center_vertical"
+                android:hint="输入广告图跳转地址"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#2d2d2d"
+                android:textColorHint="#a19c98"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/inputTitle"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_et_bg_fafafa"
+                android:gravity="center_vertical"
+                android:hint="输入广告标题，10字以内"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#2d2d2d"
+                android:textColorHint="#a19c98"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvAdType"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_et_bg_fafafa"
+                android:drawableRight="@drawable/icon_arrow_down_small"
+                android:gravity="center_vertical"
+                android:hint="广告分类"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#2d2d2d"
+                android:textColorHint="#a19c98"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvBusinessCoop"
+                android:layout_width="match_parent"
+                android:layout_height="36sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_et_bg_fafafa"
+                android:drawableRight="@drawable/icon_arrow_down_small"
+                android:gravity="center_vertical"
+                android:hint="添加商务合作（选填）"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#2d2d2d"
+                android:textColorHint="#a19c98"
+                android:textSize="14sp"/>
+
+
+            <!--商务合作一栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <!--      android:layout_toRightOf="@+id/tvBusinessCoop"-->
+                <ImageView
+                    android:id="@+id/imgHelp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/icon_ad_help"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tvCommit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/register_btn_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交审核"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCommit"
+        android:gravity="center_horizontal"
+        android:text="注:广告审核通过后，至少间隔48小时才可重新投放"
+        android:textColor="#a19c98"
+        android:textSize="12sp"/>
+</RelativeLayout>

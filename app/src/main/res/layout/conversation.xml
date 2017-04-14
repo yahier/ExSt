@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!-- android:background="@color/theme_bg"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_top"
+        android:visibility="gone" />
+    <!-- 会话页面 Fragment -->
+
+    <com.stbl.stbl.act.home.mall.widget.ChatSellerWidget
+        android:id="@+id/chat_seller_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/linAddFriend"
+        layout="@layout/include_add_friend" />
+
+    <!-- MessageListFragment  ConversationFragment -->
+
+    <LinearLayout
+        android:id="@+id/linCommon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- android:name="io.rong.imkit.fragment.ConversationFragment" -->
+        <fragment
+            android:id="@+id/fragConversation"
+            android:name="com.stbl.stbl.act.im.MyConversationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linMishu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone">-->
+
+
+    <!--<fragment-->
+    <!--android:name="io.rong.imkit.fragment.ConversationFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <View style="@style/divider_1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.rockerhieu.emojicon.EmojiconEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_keyboard_input_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/me_say_something"
+            android:maxLength="200"
+            android:maxLines="3"
+            android:padding="4dp"
+            android:textColor="#2d2d2d"
+            android:textColorHint="#b2b2b2"
+            android:textSize="16sp"
+            app:emojiconSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/icon_emoji" />
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/selector_keyboard_send" />
+
+    </LinearLayout>
+
+    <com.stbl.stbl.widget.EmojiKeyboard
+        android:id="@+id/emoji_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/top_banner" >
+
+        <!-- <ImageView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" /> -->
+         <TextView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back" />
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="男装" />
+    </RelativeLayout>
+
+    <com.stbl.stbl.widget.SearchEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_mall_search_edittext"
+        android:focusable="false" />
+
+    <fragment
+        android:id="@+id/id_fragment_goods"
+        android:name="com.stbl.stbl.act.home.mall.MallGoodsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

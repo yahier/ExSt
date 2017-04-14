@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light"
+    android:orientation="vertical">
+
+    <View
+        style="@style/divider_1px"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_follow_system"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/me_follow_system_lang"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <ImageView
+            android:id="@+id/iv_follow_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_multi_lang"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/layout_simple_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/me_simple_chinese"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <ImageView
+            android:id="@+id/iv_simple_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_multi_lang"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/layout_english"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/me_english"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <ImageView
+            android:id="@+id/iv_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_multi_lang"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/theme_top_banner"
+    style="@style/top_banner">
+
+    <TextView
+        android:id="@+id/theme_top_banner_left"
+        style="@style/top_banner_left"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/back" />
+
+    <TextView
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/theme_top_banner_middle"
+        style="@style/top_banner_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_member_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:layout_marginRight="@dimen/dp_80"
+        android:ellipsize="end"
+        android:paddingBottom="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:minHeight="30dp"
+        android:id="@+id/theme_top_banner_right"
+        style="@style/top_banner_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/top_more"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/theme_top_tv_right"
+        style="@style/top_banner_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_16"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_top_goods_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:src="@drawable/icon_goods_cart"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_top_cart_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/iv_top_goods_cart"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_girl_bg"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+</RelativeLayout>

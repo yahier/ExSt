@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/list"
+        style="@style/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/dp_10"
+        android:overScrollMode="never"
+        android:divider="@color/none_color"/>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/f_gray"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_14"
+        android:drawableTop="@drawable/icon_kong"
+        android:drawablePadding="@dimen/dp_24"
+        android:text="暂无数据"
+        android:visibility="gone"/>
+
+</RelativeLayout>

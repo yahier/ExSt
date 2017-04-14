@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@color/bgs_white_five_round_style">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_45"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="直播邀请"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/none_color"
+            android:src="@drawable/icon_close_window"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@id/tv_title"
+            android:background="@color/line_bgs" />
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bg_tanchuceng" />
+
+        <com.stbl.stbl.widget.RoundImageView
+            android:id="@+id/riv_user_img"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_below="@id/v_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_60"
+            android:src="@drawable/def_head" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:text="小back邀请你去Ta的直播间当嘉宾" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/common_red_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="确认进入" />
+
+    </RelativeLayout>
+</LinearLayout>

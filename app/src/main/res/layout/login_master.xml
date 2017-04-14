@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg" >
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        >
+        
+		<RelativeLayout
+		    android:id="@+id/title"
+		    style="@style/top_banner" >
+		
+		    <TextView
+		        android:id="@+id/theme_top_banner_left"
+		        style="@style/top_banner_left"
+		        android:layout_centerVertical="true"
+		        android:text="推荐师傅"
+		        android:padding="3dp" />
+		
+		    <TextView
+		        android:id="@+id/theme_top_banner_middle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="20dp"
+		        android:layout_toRightOf="@+id/theme_top_banner_left"
+		        android:drawablePadding="5dp"
+		        android:gravity="center"
+		        android:text="标题栏"
+		        android:textColor="@color/black"
+		        android:visibility="gone"
+		        android:textSize="@dimen/font_size_title" />
+		
+		    <TextView
+		        android:id="@+id/theme_top_banner_right"
+		        style="@style/top_banner_right"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:padding="3dp"
+		        android:visibility="visible"
+		        android:text="跳过"
+		        />
+		
+		</RelativeLayout>
+	
+		<RelativeLayout
+			android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_below="@id/title"
+		    >
+		    <LinearLayout
+		        android:id="@+id/lin_tabs"
+				android:layout_width="280dp"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_centerHorizontal="true"
+		    	android:orientation="horizontal"
+		    	android:layout_marginBottom="@dimen/edge_gap"
+		    	android:gravity="center"
+		        >
+			    <ImageButton
+			        android:id="@+id/btn_left"
+			        android:layout_width="30dp"
+			        android:layout_height="40dp"
+			        android:background="@color/transparent"
+			        android:src="@drawable/dazongshi_left" />
+			    <LinearLayout
+			        android:id="@+id/lin_test"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+			    	android:layout_height="wrap_content"
+			    	android:layout_centerHorizontal="true"
+			    	android:orientation="vertical"
+			    	android:gravity="center"
+			        >
+			        <TextView 
+			            android:id="@+id/tv_pageindex"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="16/30"
+				        android:textColor="@color/black"
+				        android:textSize="@dimen/font_size_content"
+			            />
+					<FrameLayout
+				        android:id="@android:id/tabcontent"
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="0" />
+				    
+				    <TabWidget
+				        android:id="@android:id/tabs"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal" />
+				</LinearLayout>
+		    
+			    <ImageButton
+			        android:id="@+id/btn_right"
+			        android:layout_width="30dp"
+			        android:layout_height="40dp"
+			        android:background="@color/transparent"
+			        android:src="@drawable/dazongshi_right" />
+			    
+		    </LinearLayout>
+		    
+			<LinearLayout
+			    android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_above="@id/lin_tabs"
+		        android:layout_weight="1"
+		        android:layout_margin="@dimen/edge_gap"
+			    android:orientation="vertical" >
+			
+			    <android.support.v4.view.ViewPager
+			        android:id="@+id/pager"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        />
+			
+			</LinearLayout>
+	
+		</RelativeLayout>
+    </RelativeLayout>
+</TabHost>

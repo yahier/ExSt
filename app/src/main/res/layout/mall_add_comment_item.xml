@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/seller_order_goods" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mall_goods_quality"
+                android:textColor="@color/gray_text"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/mallRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textView2"
+                android:progressDrawable="@drawable/mall_starts" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="完美"
+                android:textColor="@color/gold"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shape_mall_et_comment"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/mall_input_goods_remark"
+                android:lines="3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray1"
+                android:maxLength="60"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/tv_text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editText1"
+                android:layout_alignBottom="@+id/editText1"
+                android:textColor="@color/gray1"
+                android:padding="@dimen/dp_5"
+                android:textSize="@dimen/sp_14"
+                android:text="0/60"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

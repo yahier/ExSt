@@ -1,0 +1,162 @@
+<!-- 动态 排行榜listview的item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/list_head_img_width_height"
+            android:layout_height="@dimen/list_head_img_width_height">
+
+            <com.stbl.stbl.widget.RoundImageView
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                tools:src="@drawable/test" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_group_bg" />
+        </FrameLayout>
+
+
+        <!-- 基本信息一栏 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/dongtai_list_name"
+                    android:singleLine="true"
+                    android:text="神州" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群主:"
+                    android:textColor="@color/black7"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGroupMasterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群主:"
+                    android:textColor="@color/black7"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帮群人数:"
+                    android:textColor="@color/black7"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="234"
+                    android:textColor="@color/black7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 前三名有特定的图像显示，后面的就只显示数字 -->
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imgRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/test2"
+                android:text="@string/hello_world"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvRank"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_rank_bg"
+                android:minWidth="40dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black7"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lineMineRank"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="当前排名"
+                    android:textColor="@color/theme_black_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvMineRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/theme_red"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

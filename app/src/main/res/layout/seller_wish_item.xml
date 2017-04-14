@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/fra_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/goods_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/user_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/mine_identify_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/fra_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="字母印花圆领T恤字母印花圆领T恤"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_price_icon"
+                style="@style/dongtai_list_time"
+                android:text="¥"
+                android:textColor="@color/mall_goods_price"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/dongtai_list_time"
+                android:text="999.99"
+                android:textColor="@color/mall_goods_price"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

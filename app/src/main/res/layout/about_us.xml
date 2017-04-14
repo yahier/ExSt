@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="V 2.0"
+        android:textColor="@color/font_orange"
+        android:textSize="@dimen/font_XL" />
+
+
+    <View
+        style="@style/divider_1px"
+        android:layout_marginTop="32dp" />
+
+    <LinearLayout
+        android:id="@+id/setting_item3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_official_website"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <TextView
+            android:id="@+id/tv_official_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/me_official_website_url"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_L" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/setting_item1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/me_function_intro"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_right" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+    <LinearLayout
+        android:id="@+id/setting_item2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/me_version_check_update"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_right" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_1px" />
+
+</LinearLayout>

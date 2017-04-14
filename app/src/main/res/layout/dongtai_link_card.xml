@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/statuses_link_lin"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <!-- 图像和资料栏 不包括标签 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.stbl.stbl.widget.RoundImageView
+            android:id="@+id/link1imgUser"
+            android:layout_width="@dimen/list_head_img_width_height"
+            android:layout_height="@dimen/list_head_img_width_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/def_head" />
+
+        <!-- 个人资料栏 和添加按钮 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/theme_brown"
+                    android:id="@+id/link1name"
+                    style="@style/dongtai_list_name" />
+
+                <TextView
+                    android:textSize="15sp"
+                    style="@style/dongtai_list_name"
+                    android:text="@string/s_card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/link1user_gender_age"
+                    style="@style/dongtai_list_gender_girl"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="1dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/link1user_city"
+                    style="@style/dongtai_list_time"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_my_position"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/link1user_signature"
+                style="@style/dongtai_list_time"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

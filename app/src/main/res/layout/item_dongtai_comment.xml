@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_white"
+    android:paddingBottom="9dp"
+    android:paddingTop="9dp">
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@id/iv_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/def_head" />
+
+    <TextView
+
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="2dp"
+        android:includeFontPadding="false"
+        android:text="10:00"
+        android:textColor="@color/font_gray_light"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_time"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:id="@+id/iv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dongtai_item3" />
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="0"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_S" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="欣欣"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_M" />
+
+
+    <com.stbl.stbl.widget.TextViewFixTouchConsume xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nick"
+        android:layout_toLeftOf="@id/layout_praise"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="哈哈哈哈哈哈哈哈"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_M"
+        app:emojiconSize="15sp" />
+
+</RelativeLayout>

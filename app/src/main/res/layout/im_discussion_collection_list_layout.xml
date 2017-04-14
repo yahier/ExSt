@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_kong"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/f_gray"
+            android:textSize="@dimen/sp_14"
+            android:text="@string/im_discussion_empty_tips"
+            android:layout_marginTop="@dimen/dp_24"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/lv_discussion_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:scrollingCache="false"
+         />
+
+</LinearLayout>

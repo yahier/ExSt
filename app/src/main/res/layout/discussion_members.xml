@@ -1,0 +1,37 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/theme_top_banner"-->
+        <!--style="@style/top_banner" >-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/theme_top_banner_left"-->
+            <!--style="@style/top_banner_left"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:drawableLeft="@drawable/back" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/theme_top_banner_middle"-->
+            <!--style="@style/top_banner_middle"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="讨论组成员" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/theme_top_banner_right"-->
+            <!--style="@style/top_baner_right_black_bg"-->
+            <!--android:text="删除" />-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

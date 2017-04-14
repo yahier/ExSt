@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="9dp"
+    android:paddingTop="9dp" >
+
+    <LinearLayout
+        android:id="@+id/drop_down_menu_container_layout"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:background="#bf000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

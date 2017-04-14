@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="精彩链接标题"
+            android:textColor="@color/font_black_light"
+            android:textSize="@dimen/font_M" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="http://www.stbl.cc"
+            android:textColor="@color/font_black_light"
+            android:textSize="@dimen/font_M" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_text"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_square_image" />
+
+    <View
+        android:id="@+id/v_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99333333"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_checkbox_contact" />
+
+</RelativeLayout>

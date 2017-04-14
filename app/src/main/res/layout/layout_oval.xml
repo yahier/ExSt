@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="27dp"
+    android:background="@drawable/shape_white_red_stroke"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="2dp" >
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/iv"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_head" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center"
+        android:text="联系需求发布者"
+        android:textColor="#f35f65"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_help_sign"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:text="@string/me_recently_help_me_sign_in_people"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/test_right"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/layout_help_sign_user_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/iv_arrow"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSignTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/me_no_people_help_sign_in"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_M" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 第二块 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@drawable/sign_shadow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nextDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nextAwardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sign_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_bg"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="@string/me_sign_in"
+            android:textColor="@color/theme_red"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sign_table_bg_new"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/sign_list_lin">
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+        </LinearLayout>
+        <!-- 第二排 -->
+
+        <LinearLayout style="@style/sign_list_lin">
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+        </LinearLayout>
+        <!-- 第三排 -->
+
+        <LinearLayout style="@style/sign_list_lin">
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+        </LinearLayout>
+        <!-- 第四排 -->
+
+        <LinearLayout style="@style/sign_list_lin">
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+
+            <ImageView style="@style/sign_list_item" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sign_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/me_sign_in_rule"
+        android:textColor="#969696"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add">
+
+        <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:emptyImage="@drawable/icon_kong"
+            app:emptyText="还没有上传过精彩链接" />
+
+        <com.stbl.stbl.widget.XListView
+            android:id="@+id/lv_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray_line"
+            android:dividerHeight="0px"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add"
+        style="@style/common_red_button"
+        android:layout_alignParentBottom="true"
+        android:text="添加链接" />
+
+</RelativeLayout>

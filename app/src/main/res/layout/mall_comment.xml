@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/top_banner" >
+
+        <ImageView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="@string/mall_goods_remark" />
+
+        <TextView
+            android:id="@+id/top_right"
+            style="@style/top_banner_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mall_remark_goods"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/mall_bottom_button"
+            android:text="@string/mall_submit" />
+
+        <com.stbl.stbl.widget.XListView
+            android:id="@+id/lv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_commit"
+            android:divider="@color/gray_line"
+            android:dividerHeight="1px" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_bg"
+        android:orientation="vertical" >
+
+        <!-- top banner -->
+
+        <RelativeLayout style="@style/top_banner" >
+
+            <ImageView
+                android:id="@+id/top_left"
+                style="@style/top_banner_left"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/top_banner_middle"
+                android:layout_centerInParent="true"
+                android:text="@string/mall_mall" />
+
+            <ImageView
+                android:id="@+id/top_right"
+                style="@style/top_banner_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_administration" />
+        </RelativeLayout>
+        <View style="@style/Divider"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/id_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.stbl.stbl.widget.BannerView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="#ffffff" />
+
+                    <GridView
+                        android:id="@+id/gridClass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:numColumns="4"
+                        />
+
+                    <com.stbl.stbl.widget.SearchEditText
+                        android:id="@+id/et_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/shape_mall_search_edittext"
+                        android:focusable="false" />
+                    <!-- 热门商品 -->
+
+                    <View style="@style/line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="10dp"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp" >
+
+                            <View
+                                style="@style/line_horizontal"
+                                android:layout_weight="1"
+                                android:background="#E0E0E0" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:drawableLeft="@drawable/icon_remen"
+                                android:drawablePadding="8dp"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="@string/mall_recommend_goods"
+                                android:textColor="@color/theme_red_hot"
+                                android:textSize="@dimen/font_size_list" />
+
+                            <View
+                                style="@style/line_horizontal"
+                                android:layout_weight="1"
+                                android:background="#E0E0E0" />
+                        </LinearLayout>
+
+                        <!-- 热门商品grid -->
+
+                        <GridView
+                            android:id="@+id/mall_hot_grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numColumns="2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <include
+                                android:id="@+id/hot0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+
+                            <include
+                                android:id="@+id/hot1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <include
+                                android:id="@+id/hot2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+
+                            <include
+                                android:id="@+id/hot3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <include
+                                android:id="@+id/hot4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+
+                            <include
+                                android:id="@+id/hot5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 热门商品结束 -->
+                    <!-- 猜你喜欢 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp" >
+
+                            <View
+                                style="@style/line_horizontal"
+                                android:layout_weight="1"
+                                android:background="#E0E0E0" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:drawableLeft="@drawable/icon_xihuan"
+                                android:drawablePadding="8dp"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="@string/mall_guess_you_like"
+                                android:textColor="@color/theme_red_like"
+                                android:textSize="@dimen/font_size_list" />
+
+                            <View
+                                style="@style/line_horizontal"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="#E0E0E0" />
+                        </LinearLayout>
+
+                        <GridView
+                            android:id="@+id/mall_maylike_grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numColumns="2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <include
+                                android:id="@+id/like0"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+
+                            <include
+                                android:id="@+id/like1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <include
+                                android:id="@+id/like2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+
+                            <include
+                                android:id="@+id/like3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                layout="@layout/mall_goods_item" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

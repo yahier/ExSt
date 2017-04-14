@@ -1,0 +1,45 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light">
+    <View
+        android:id="@+id/v_top_line"
+        style="@style/Divider"/>
+    <com.stbl.stbl.widget.refresh.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_to_load_layout"
+        android:layout_below="@+id/v_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipe_style="classic">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/header_my_refresh" />
+
+        <ListView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray_line"
+            android:dividerHeight="@dimen/px_1"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never" />
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/footer_my_load_more" />
+
+    </com.stbl.stbl.widget.refresh.SwipeToLoadLayout>
+
+    <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:emptyImage="@drawable/icon_kong"
+        app:emptyText="@string/no_message_yet" />
+
+</RelativeLayout>

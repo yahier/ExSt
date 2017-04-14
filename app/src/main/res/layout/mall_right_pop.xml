@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/top_banner">
+
+        <ImageView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <!-- 个人信息栏 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.stbl.stbl.widget.RoundImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/def_head" />
+
+                    <ImageView
+                        android:id="@+id/user_identify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/mine_identify_icon"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <!-- 个人资料栏 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            style="@style/dongtai_list_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvGenderAge"
+                            style="@style/dongtai_list_gender_girl"
+                            android:paddingBottom="1dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="1dp" />
+
+                        <TextView
+                            android:id="@+id/tvCity"
+                            style="@style/dongtai_list_time"
+                            android:layout_marginLeft="5dp"
+                            android:drawableLeft="@drawable/icon_my_position" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 个人资料栏结束 -->
+            </LinearLayout>
+
+            <!-- 订单 -->
+
+            <LinearLayout
+                android:id="@+id/btn_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/mall_right_window_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_quanbudingdan"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_order" />
+
+                <TextView
+                    android:id="@+id/tvOrderCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_girl_bg"
+                    android:includeFontPadding="true"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_content"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="#E0E0E0" />
+            <!-- 购物车 -->
+
+            <LinearLayout
+                android:id="@+id/btn_shoppingcart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_gouwuche"
+                    style="@style/mall_right_window_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_my_gouwuche"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_shopping_car" />
+
+                <TextView
+                    android:id="@+id/tvCartCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_girl_bg"
+                    android:includeFontPadding="true"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_content"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="#E0E0E0" />
+            <!-- 地址管理 -->
+
+            <LinearLayout
+                android:id="@+id/btn_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_dizhiguanli"
+                    style="@style/mall_right_window_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_my_dizhi"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_address_manager" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="#E0E0E0" />
+            <!-- 优惠券 -->
+
+            <LinearLayout
+                android:id="@+id/btn_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_youhuiquan"
+                    style="@style/mall_right_window_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_youhuiquan"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_coupon" />
+
+                <TextView
+                    android:id="@+id/tvDiscountCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray1"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="#E0E0E0"
+                android:visibility="gone" />
+            <!-- 我的钱包 去掉 -->
+
+            <LinearLayout
+                android:id="@+id/btn_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_wodeqianbao"
+                    style="@style/mall_right_window_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_qianbao"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_my_wallet" />
+
+                <TextView
+                    android:id="@+id/tvMoneyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="#E0E0E0"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/register_lin"
+    android:gravity="center_horizontal"
+    android:paddingTop="56dp">
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/imgMaster"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon_shifu_default" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/not_choose_master"
+        android:textColor="#a6a6a6"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/register_divider_line"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_shifu_default"
+            android:text="@string/find_master_in_below_types"
+            android:textColor="#a6a6a6"
+            android:textSize="14sp" />
+
+        <View
+            style="@style/register_divider_line"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_register_recommend"
+            android:gravity="center_horizontal"
+            android:text="@string/recommend"
+            android:textColor="#a6a6a6"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_register_scan"
+            android:gravity="center_horizontal"
+            android:text="@string/me_scan_a_scan"
+            android:textColor="#a6a6a6"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_register_search"
+            android:gravity="center_horizontal"
+            android:text="@string/search"
+            android:textColor="#a6a6a6"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnOk"
+        style="@style/common_bnt_fill_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/register_btn_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/join_tribe" />
+
+</LinearLayout>

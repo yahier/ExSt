@@ -1,0 +1,139 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <!-- top banner -->
+
+    <RelativeLayout style="@style/top_banner" >
+
+        <ImageView
+            android:id="@+id/dongtai_main_search"
+            style="@style/top_banner_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dongtai_search" />
+
+        <TextView
+            android:id="@+id/top_banner_middle"
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="动 态" />
+
+        <ImageView
+            android:id="@+id/dongtai_main_edit"
+            style="@style/top_banner_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_dynamic_short" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/dongtai_main_item1"
+            style="@style/dongtai_main_top_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dongtai_main_top_itembg_unclickable"
+            android:text="酋长" />
+
+        <TextView
+            android:id="@+id/dongtai_main_item2"
+            style="@style/dongtai_main_top_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dongtai_main_top_itembg_unclickable"
+            android:text="长老" />
+
+        <TextView
+            android:id="@+id/dongtai_main_item3"
+            style="@style/dongtai_main_top_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dongtai_main_top_itembg_unclickable"
+            android:text="师傅" />
+
+        <TextView
+            android:id="@+id/dongtai_main_item4"
+            style="@style/dongtai_main_top_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="排行" />
+
+        <TextView
+            android:id="@+id/dongtai_main_item5"
+            style="@style/dongtai_main_top_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="社区" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:dividerHeight="10dp" -->
+
+        <com.stbl.stbl.widget.XListView
+            android:id="@+id/main_dontai_list"
+            style="@style/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/theme_bg"
+            android:overScrollMode="never" />
+
+        <com.stbl.stbl.widget.dongtai.SuspendView
+            android:id="@+id/dongtai_suspendview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/main_dongtai_big_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/theme_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_kong" />
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_dynamic_date"
+                android:textColor="@color/gray2"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

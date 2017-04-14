@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:background="@color/bg"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_banner_default"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7f000000"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+
+        android:textColor="@color/f_white"
+        android:textSize="14sp"/>
+
+    <!--新加-->
+    <TextView
+        android:id="@+id/tvAdBusinessType"
+        style="@style/ad_business_type_text"
+        android:layout_alignParentRight="true"
+        android:text="找代理"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_ad_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7f000000"
+        android:text="广告"
+        android:textColor="@color/white"
+        android:textSize="7sp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

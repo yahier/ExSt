@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="7dp"
+    android:paddingTop="5dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/img_goods_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/mall_goods_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="3dp"
+        android:singleLine="true"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/font_size_content" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/mall_goods_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="¥999.99"
+        android:textColor="@color/theme_red"
+        android:textSize="@dimen/font_size_title" />
+
+</LinearLayout>

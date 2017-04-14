@@ -1,0 +1,53 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+        android:layout_margin="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/community_search"
+            android:drawablePadding="3dp"
+            android:hint="@string/me_please_input_keyword"
+            android:imeOptions="actionSearch"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <!--  android:paddingBottom="8dp"
+            android:paddingTop="8dp"-->
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/common_red_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="@string/search"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:divider="@color/white"
+        android:dividerHeight="20dp"
+        android:padding="20dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

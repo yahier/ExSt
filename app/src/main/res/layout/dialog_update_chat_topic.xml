@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colors_7f000000" >
+
+    <RelativeLayout
+        android:id="@+id/popup_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:background="@color/bgs_white_five_round_style"
+        android:paddingBottom="@dimen/dp_30" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_45"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/icon_topic"
+            android:drawablePadding="@dimen/dp_2"
+            android:gravity="center_vertical"
+            android:text="@string/topic_set"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@id/title_tv"
+            android:background="@color/line_bgs" />
+
+        <EditText
+            android:id="@+id/topic_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@color/theme_bg"
+            android:hint="@string/hint_input_topic"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_14" />
+
+        <LinearLayout
+            android:id="@+id/btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_edt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_35"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/common_btn_gray"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_3"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <Button
+                android:id="@+id/enter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:background="@drawable/common_btn_red"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_3"
+                android:text="@string/enter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/popup_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/popup_parent_layout"
+        android:background="@color/none_color" />
+
+    <Button
+        android:id="@+id/popup_cancel2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/popup_parent_layout"
+        android:background="@color/none_color" />
+</RelativeLayout>

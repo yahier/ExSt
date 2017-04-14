@@ -1,0 +1,61 @@
+<!-- 只用作整个文件复制用 -->
+<!--android:background="@color/gray1"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/windowLin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#33000000"
+              android:gravity="right"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_statuses_main_window"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/window_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/create_discussion"
+            android:textColor="#2d2d2d"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2"/>
+
+        <TextView
+            android:id="@+id/window_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/add_friend"
+            android:textColor="#2d2d2d"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2"/>
+
+        <TextView
+            android:id="@+id/window_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/send_mass_message"
+            android:textColor="#2d2d2d"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

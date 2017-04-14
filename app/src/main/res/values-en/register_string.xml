@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<resources>
+	<string name="login_in">Login</string>
+	<string name="register">Sign in</string>
+	<string name="wechat_login">Log via Wechat</string>
+	<string name="tourist_temp_login">Just try</string>
+	<string name="wechat_no_authorized">Wechat is not authorized</string>
+	<string name="country_region">Nation/Area</string>
+	<string name="phone_number">Phone number</string>
+	<string name="password">Password</string>
+	<string name="forget_password">Forgot password</string>
+	<string name="other_login_type">Other login</string>
+	<string name="please_choose_country_code">Please choose country code</string>
+	<string name="please_input_phone_number">Please enter phone number</string>
+	<string name="please_input_account_pwd">Please enter login password</string>
+	<string name="pwd_must_more_than_6">Please enter password over 6 numbers</string>
+	<string name="logging">Login</string>
+	<string name="verify_code">Verification code</string>
+	<string name="sms_verify_code">SMS verification code</string>
+	<string name="obtain_verify_code">Send the verification code</string>
+	<string name="obtain_sms_verify_code">Send the SMS verification code</string>
+	<string name="login_in_btn">Login</string>
+	<string name="please_input_verify_code">Enter the verification code</string>
+	<string name="sent_verify_code_please_check">Verification code has been sent,please note to check </string>
+	<string name="nick_canot_be_null">Username cannot be blank</string>
+	<string name="nickname">Username</string>
+	<string name="next_step">Next</string>
+	<string name="resend_verify_code">Resend verification code</string>
+	<string name="registering">Sign in...</string>
+	<string name="failed_to_upload_head_img">Upload fail</string>
+	<string name="register_success">Registration Successful</string>
+	<string name="head_img_upload_success">Upload success</string>
+	<string name="please_input_6_20_length_pwd">Enter a combination of 6~20 numbers, Letters and punctuation marks</string>
+	<string name="register_">Sign in</string>
+	<string name="recommend_master">Recommended master </string>
+	<string name="Ta_has_not_upload_img">He or she hasn\'t upload photos</string>
+	<string name="choose">Choose</string>
+	<string name="ensure_master">Confirm master</string>
+	<string name="baishi_success">Master get success</string>
+	<string name="not_choose_master">You have not chosen any master yet</string>
+	<string name="find_master_in_below_types">You can search master by </string>
+	<string name="recommend">Recommend</string>
+	<string name="join_tribe">Join a group</string>
+	<string name="user_protical_tip"><Data><![CDATA[<font color="#999999">Tapping "Sign in" means you agree to </font><font color="#e7be09">《Terms and Privacy》</font>]]></Data></string>
+	<string name="select_industry">Select industry</string>
+	<string name="please_select_industry">Please Select industry</string>
+	<string name="update_success">update success</string>
+</resources>

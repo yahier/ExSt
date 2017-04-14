@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+	<RelativeLayout style="@style/top_banner" >
+        <ImageView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+        <TextView
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="@string/mall_receiving_success" />
+    </RelativeLayout>
+    
+		<ScrollView
+		    android:id="@+id/scrollView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@color/white"
+			    android:orientation="vertical" >
+		
+		        <ImageView
+				    android:layout_width="70dp"
+				    android:layout_height="70dp"
+				    android:layout_marginTop="30dp"
+				    android:layout_gravity="center_horizontal" 
+				    android:src="@drawable/test"
+		            />
+		        <TextView
+				    android:layout_width="200dp"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="8dp"
+				    android:layout_gravity="center"
+				    android:gravity="center"
+				    android:textSize="18dp"
+				    android:textColor="@color/black"
+				    android:text="@string/mall_receiving_success_tips"
+		            />
+		
+		        <Button
+		            android:id="@+id/button1"
+		            android:layout_width="200dp"
+		            android:layout_height="40dp"
+		            android:layout_marginTop="30dp"
+		            android:layout_marginBottom="20dp"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:background="@drawable/shape_seller_order_btn"
+		            android:textColor="@drawable/shape_seller_order_btn"
+		            android:text="@string/mall_remark_goods" />
+			</LinearLayout>
+			<View style="@style/line_horizontal"/>
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:padding="10dp"
+			    android:layout_gravity="left"
+			    android:gravity="left"
+			    android:textSize="14dp"
+			    android:textColor="@color/gray_text"
+			    android:text="@string/mall_guess_you_like"
+				/>	
+			<View style="@style/line_horizontal"/>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/white"
+		        android:orientation="vertical" >
+				<include layout="@layout/mall_goods_item_pair"
+				    android:background="@color/white"
+				    />
+			</LinearLayout>
+			<View style="@style/line_horizontal"/>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

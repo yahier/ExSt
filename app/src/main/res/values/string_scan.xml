@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--扫描-->
+    <string name="flash_light">闪光灯</string>
+    <string name="Align_QR_code_within_the_frame_to_scan">将二维码放入扫描框内，即可自动扫描</string>
+    <string name="no_qr_code_found">解析图片失败</string>
+    <string name="scanning">正在扫描...</string>
+    <string name="please_scan_friend_qr">请扫描好友二维码</string>
+    <string name="choose_qr_img">选择二维码图片</string>
+    <!--首页-->
+
+    <string name="contest_with_others">快来一较高下</string>
+    <string name="weekly_rank">每周排行榜</string>
+    <string name="st_mall">师徒商城</string>
+    <string name="there_is_always_got_one_for_you">总有一款适合你</string>
+    <string name="big_chief">大酋长</string>
+    <string name="Recommend_goods">推荐商品</string>
+    <string name="help_you_to_find_people">想找人，我来帮</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_statuses">动态</string>
+    <string name="tab_im">消息</string>
+    <string name="tab_me">我的</string>
+
+    <!--新加-->
+    <string name="exchange_mall">兑换商城</string>
+    <string name="goods_ready_for_you_to_exchange">万千好礼等你来换</string>
+    <string name="long_statuses">长动态</string>
+    <string name="short_statuses">短动态</string>
+    <string name="search_user">查找用户</string>
+    <string name="no_master_to_find">还没有师傅，快去看看吧</string>
+    <string name="i_wanna_shoutu">我要收徒</string>
+    <string name="i_wanna_hang">我要逛逛</string>
+    <string name="update_account">升级账户</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_send_redpacket_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_buy_jindou" />
+
+        <EditText
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/inputDouCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:hint="填写金豆数量"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCastBean"
+            style="@style/common_bnt_long"
+            android:layout_marginTop="40dp"
+            android:text="发    送" />
+    </LinearLayout>
+
+</LinearLayout>

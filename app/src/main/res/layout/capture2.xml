@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/theme_top_banner"
+        style="@style/top_banner"
+        android:background="@color/title_color">
+
+        <TextView
+            android:id="@+id/capture_button_cancel"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back" />
+
+        <TextView
+            android:id="@+id/theme_top_banner_middle"
+            style="@style/top_banner_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/me_scan_a_scan"
+            android:textColor="@color/title_text_color" />
+
+
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+
+    <FrameLayout
+        android:id="@+id/capture_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/capture_preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <!--    android:layout_gravity="center"-->
+        <com.stbl.stbl.barcoe.view.ViewfinderView
+            android:id="@+id/capture_viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:background="@android:color/transparent" />
+
+        <!--按钮操作栏    android:background="@color/capture_text_cover_bg"  -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/capture_scan_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/scan_pic_selector"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/album"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/capture_flashlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:drawablePadding="6dp"
+                android:drawableTop="@drawable/icon_scan_flash"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/flash_light"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!--  android:background="@color/capture_text_cover_bg"-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95.0dip"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/capture_bottom_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:text="@string/Align_QR_code_within_the_frame_to_scan"
+                android:textColor="@color/white"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

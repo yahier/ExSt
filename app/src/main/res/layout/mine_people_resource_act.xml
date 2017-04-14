@@ -1,0 +1,234 @@
+<!-- 只用作整个文件复制用 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/theme_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/Divider"/>
+
+        <RelativeLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_connection_apprentice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/img1"
+                android:text="我的徒弟"
+                android:textColor="#2d2d2d"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/list_right_arrow" />
+
+            <TextView
+                android:id="@+id/tvCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/imgRight"
+                android:textColor="#a19c98"
+                android:textSize="14dp" />
+
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="54dp" />
+        </RelativeLayout>
+
+        <!--我的关注-->
+
+        <RelativeLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_connection_follow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/img2"
+                android:text="我的关注"
+                android:textColor="#2d2d2d"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/imgRight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/list_right_arrow" />
+
+            <TextView
+                android:id="@+id/tvCount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/imgRight2"
+                android:textColor="#a19c98"
+                android:textSize="14dp" />
+
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="54dp" />
+        </RelativeLayout>
+
+        <!--我的粉丝-->
+
+        <RelativeLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_connection_vermicelli" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/img3"
+                android:text="我的粉丝"
+                android:textColor="#2d2d2d"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/imgRight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/list_right_arrow" />
+
+            <TextView
+                android:id="@+id/tvCount3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/imgRight3"
+                android:textColor="#a19c98"
+                android:textSize="14dp" />
+
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="54dp" />
+        </RelativeLayout>
+
+        <!--有新徒弟的显示-->
+        <LinearLayout
+            android:id="@+id/linNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:background="@color/theme_bg"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="12dp"
+                android:text="新收徒弟"
+                android:textColor="#a19c98"
+                android:textSize="13dp" />
+
+            <com.stbl.stbl.widget.XListView
+                style="@style/list"
+                android:id="@+id/listNewStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--没有新徒弟的显示-->
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/theme_bg"
+            android:id="@+id/linNoneNew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="34dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_connection_no_new" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="你最近没有新徒弟"
+                android:textColor="#a19c98"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnShoutu"
+                style="@style/common_bnt_short_red"
+                android:layout_width="114dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="21dp"
+                android:text="立即收徒" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView >

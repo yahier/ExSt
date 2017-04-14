@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dongtai_pulish_img_icon" />
+
+        <TextView
+            android:id="@+id/tv_add_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/me_upload_one_picture"
+            android:textColor="@color/f_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_title"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/mine_link_et_bg"
+            android:hint="@string/me_input_link_title"
+            android:padding="8dp"
+            android:textColor="@color/f_black"
+            android:textColorHint="@color/f_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_link"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/mine_link_et_bg"
+            android:hint="@string/me_input_your_link"
+            android:maxLines="8"
+            android:padding="8dp"
+            android:textColor="@color/f_black"
+            android:textColorHint="@color/f_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@style/common_red_button"
+        android:layout_alignParentBottom="true"
+        android:text="@string/me_add_link" />
+
+</LinearLayout>

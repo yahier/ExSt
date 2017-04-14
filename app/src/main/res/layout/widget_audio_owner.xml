@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/audio_anim_iv"
+        android:layout_width="@dimen/dp_71"
+        android:layout_height="@dimen/dp_71"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@anim/direct_anim_iv"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_67"
+        android:layout_height="@dimen/dp_67"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_direct_anim_one"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dp_2"/>
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/audio_avatar"
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_3" />
+
+    <ImageView
+        android:id="@+id/audio_close_micephone"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_65"
+        android:layout_marginTop="@dimen/dp_61"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_jingmai_hong"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/audio_name"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_avatar"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

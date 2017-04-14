@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/shape_white_corner4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/no_pwd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="17.5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="17.5dp"
+            android:src="@drawable/redpacket_pay_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="35dp"
+            android:paddingTop="17.5dp"
+            android:text="@string/me_select_pay_method"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_weixin_pay"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_wx_pay" />
+
+        <TextView
+            android:id="@+id/tv_wx_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/me_weixin_pay"
+            android:textColor="@color/f_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_pay_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebeae8" />
+
+    <LinearLayout
+        android:id="@+id/layout_ali_pay"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_ali_pay" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/me_ali_pay"
+            android:textColor="@color/f_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_pay_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebeae8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+</LinearLayout>

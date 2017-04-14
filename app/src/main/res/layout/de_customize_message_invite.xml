@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/rc_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_horizontal" >
+
+    <!-- 原本是没有padding属性的，有气泡背景后，应该就不需要了 -->
+
+    <LinearLayout
+        android:id="@id/rc_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="我是讨论组消息"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/black7" />
+
+<!--         <View style="@style/line_horizontal" />
+
+        <TextView
+            android:text="数据深度覆盖"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:padding="5dp"
+            android:textColor="#D6AB28" /> -->
+    </LinearLayout>
+
+</RelativeLayout>

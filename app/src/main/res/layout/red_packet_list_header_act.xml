@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_loading_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rp_detail_header_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/linLongBack"
+        style="@style/top_banner"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_white"/>
+
+        <TextView
+            android:id="@+id/tvLongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center_vertical"
+            android:text="师徒部落红包"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgSender"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/def_head"/>
+
+    <LinearLayout
+        android:id="@+id/linSenderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2d2d2d"
+            android:textSize="17dp"/>
+
+
+        <TextView
+            android:id="@+id/tvPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_money_amount"
+            android:background="@drawable/shape_redpacket_ping"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:text="@string/me_pin"
+            android:textColor="@color/f_white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/tvGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linSenderName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="#aaaaaa"
+        android:textSize="14dp"/>
+
+    <!-- 抢到的红包 -->
+    <RelativeLayout
+        android:id="@+id/linPickedMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGreetings"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPickedMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2d2d2d"
+                android:textSize="34dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvPickedMoney"
+                android:layout_marginLeft="8dp"
+                android:text="元"
+                android:textColor="#2d2d2d"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linMoney"
+            android:gravity="center_horizontal">
+
+            <!--android:layout_marginTop="8dp"-->
+            <TextView
+                android:id="@+id/tvPickedMoneyTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:text="已存入钱包"
+                android:textColor="#e38c01"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvTipInfo"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/linPickedMoney"
+        android:layout_marginTop="20dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:textColor="#aaaaaa"
+        android:textSize="13dp"/>
+
+
+</RelativeLayout>

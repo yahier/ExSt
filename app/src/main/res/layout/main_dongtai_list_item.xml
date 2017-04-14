@@ -1,0 +1,436 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line_horizontal"
+        android:background="@color/gray3"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/linTop"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_statuses_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:text="@string/statuses_top"
+            android:textColor="#a19c98"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="#e2e2e2" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/linHot"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_statuses_hot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:text="@string/statuses_hot"
+            android:textColor="#a19c98"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="#e2e2e2" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_zone"
+        style="@style/dongtai_list_visible_con"
+        android:orientation="vertical">
+
+        <!-- 一直到四个数字操作栏 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.stbl.stbl.widget.RoundImageView
+                    android:id="@+id/item_iv"
+                    android:layout_width="@dimen/list_head_img_width_height"
+                    android:layout_height="@dimen/list_head_img_width_height"
+                    android:layout_marginRight="6dp"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgAuthorized"
+                    style="@style/list_authorized"
+                    android:layout_gravity="right|bottom"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/dongtai_list_name"
+                    android:layout_marginTop="2dp"
+                    tools:text="小baby" />
+
+
+                <LinearLayout
+                    style="@style/statuses_userinfo_line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/relation"
+                        style="@style/dongtai_list_img_relation" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/dongtai_list_time"
+                        tools:text="40分钟之前" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--显示热门或者关注按钮-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:src="@drawable/icon_statuses_arrow_down"
+                    android:visibility="invisible" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvSquareAtten"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="18sp"-->
+                <!--android:background="@drawable/shape_dongtai_item_focus"-->
+                <!--android:drawableLeft="@drawable/dongtai_item_focus"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="3dp"-->
+                <!--android:paddingRight="3sp"-->
+                <!--android:text="@string/follow"-->
+                <!--android:textColor="@color/font_new_yellow"-->
+                <!--android:textSize="10sp"/>-->
+
+
+                <!--android:drawableLeft="@drawable/dongtai_item_focus"-->
+                <TextView
+                    android:id="@+id/tvSquareAtten"
+                    android:layout_width="60sp"
+                    android:layout_height="27sp"
+                    android:background="@drawable/shape_dongtai_item_focused"
+                    android:gravity="center"
+                    android:text="@string/plus_follow"
+                    android:textColor="#e38c01"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!-- 内容 图片 -->
+
+
+        <LinearLayout
+            style="@style/statuses_main_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.stbl.stbl.widget.EmojiTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tvShortTitle"
+                style="@style/statuses_short_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:ellipsize="end"
+                android:maxLines="8"
+                app:emojiconSize="16sp"
+                tools:text="tvShortTitlerrrrrrrrrrrrrrrrdddddddddddddddddddddddddddddddddddddddddddddd" />
+
+            <LinearLayout
+                android:id="@+id/linLongSpe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.stbl.stbl.widget.ImageGridView
+                    android:id="@+id/item_gv"
+                    style="@style/statuses_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="visible" />
+
+                <com.stbl.stbl.widget.EmojiTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tvLongTitle"
+                    style="@style/statuses_long_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:autoLink="all"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    app:emojiconSize="17sp"
+                    tools:text="main_dongtai_content2 的sss" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLink"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    style="@style/statuses_link_lin_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <include
+                    android:id="@+id/link1User"
+                    layout="@layout/dongtai_link_card"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link2Wish"
+                    layout="@layout/dongtai_link_wish"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link3Statuses"
+                    layout="@layout/dongtai_link_collected_dongtai"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link4Goods"
+                    layout="@layout/dongtai_link_goods"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link5Live"
+                    layout="@layout/dongtai_link_live"
+                    android:visibility="gone" />
+
+                <!--android:layout_marginRight="15dp"-->
+                <include
+                    android:id="@+id/statusesVideo"
+                    layout="@layout/dongtai_layout_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:visibility="gone" />
+
+                <!--android:layout_marginRight="15dp"不明白 为什么不加marginRight的话，右边好像缺少一块-->
+                <include
+                    android:id="@+id/link7Video"
+                    layout="@layout/dongtai_link_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link8Link"
+                    layout="@layout/dongtai_link_link"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/link9Hongbao"
+                    layout="@layout/dongtai_link_hongbao"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp" />
+            <!-- 四个动态数字显示栏 -->
+
+            <LinearLayout
+                style="@style/statuses_4num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-22dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/linItem1"
+                    style="@style/dongtai_list_num_con">
+
+                    <ImageView
+                        android:id="@+id/imgItem1"
+                        style="@style/dongtai_num4_img"
+                        android:src="@drawable/dongtai_item1" />
+
+                    <TextView
+                        android:id="@+id/item_text1"
+                        style="@style/dongtai_list_num_text"
+                        android:layout_marginLeft="4dp"
+
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linItem2"
+                    style="@style/dongtai_list_num_con">
+
+                    <ImageView
+                        android:id="@+id/imgItem2"
+                        style="@style/dongtai_num4_img"
+                        android:src="@drawable/dongtai_item2" />
+                    <!--android:drawableLeft="@drawable/dongtai_item3"-->
+                    <TextView
+                        android:id="@+id/item_text2"
+                        style="@style/dongtai_list_num_text"
+                        android:layout_marginLeft="4dp"
+
+                        android:text="0" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linItem3"
+                    style="@style/dongtai_list_num_con">
+
+                    <ImageView
+                        android:id="@+id/imgItem3"
+                        style="@style/dongtai_num4_img"
+                        android:src="@drawable/dongtai_item3" />
+                    <!--android:drawableLeft="@drawable/dongtai_item3"-->
+                    <TextView
+                        android:id="@+id/item_text3"
+                        style="@style/dongtai_list_num_text"
+                        android:layout_marginLeft="4dp"
+
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linItem4"
+                    style="@style/dongtai_list_num_con">
+
+                    <ImageView
+                        android:id="@+id/imgItem4"
+                        style="@style/dongtai_num4_img"
+                        android:src="@drawable/dongtai_item4" />
+                    <!-- android:drawableLeft="@drawable/dongtai_item4"-->
+                    <TextView
+                        android:id="@+id/item_text4"
+                        style="@style/dongtai_list_num_text"
+                        android:layout_marginLeft="4dp"
+                        android:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 四个动态item结束 -->
+
+            <!--评论列表-->
+
+            <LinearLayout
+                android:id="@+id/linRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/remarkList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/transparent"
+                    android:listSelector="@color/transparent" />
+
+                <TextView
+                    android:id="@+id/tvMoreRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/statuses_remark_load_more"
+                    android:textColor="#a19c98"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 主内容和图片结束 -->
+    </LinearLayout>
+    <!-- 个人信息结束 -->
+
+
+    <View
+        style="@style/line_horizontal"
+        android:background="@color/gray3" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/theme_bg" />
+
+</LinearLayout>

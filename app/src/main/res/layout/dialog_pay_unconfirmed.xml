@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/shape_white_corner4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/no_pwd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="17.5dp"
+            android:paddingTop="17.5dp"
+            android:text="@string/dialog_title_pay"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:paddingBottom="12.5dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="12.5dp"
+            android:src="@drawable/dialog_close" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebeae8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="17dp"
+        android:text="@string/me_pay_unconfirmed"
+        android:textColor="@color/f_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20.5dp"
+        android:layout_marginRight="20.5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_resend_redpacket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_dialog_negative"
+            android:text="@string/me_resend_redpacket"
+            android:textColor="#646464"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_return_circle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_red"
+            android:text="@string/me_return_shopping_circle"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+</LinearLayout>

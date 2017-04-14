@@ -1,0 +1,39 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_18">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.stbl.stbl.widget.RoundImageView
+            android:id="@+id/imgUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_gravity="right|top"
+            android:src="@drawable/icon_delete_line" />
+    </FrameLayout>
+
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="小小"
+        android:textColor="@color/gray1"
+        android:textSize="12sp" />
+
+</LinearLayout>

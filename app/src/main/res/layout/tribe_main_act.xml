@@ -1,0 +1,176 @@
+<!-- 只用作整个文件复制用 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <!-- 背景栏 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+
+            <com.stbl.stbl.widget.refresh.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/swipe_to_load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:swipe_style="classic">
+                <!--   android:background="@color/bg_white"   -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg"
+                    android:clipToPadding="false"
+                    android:paddingBottom="0dp"
+                    />
+
+                <!--<include-->
+                <!--android:id="@id/swipe_load_more_footer"-->
+                <!--layout="@layout/footer_my_load_more" />-->
+                <TextView
+                    android:id="@id/swipe_load_more_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/white" />
+
+                <!--<View style="@style/Divider"/>-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="12dp"-->
+                <!--android:background="@color/bg"/>-->
+
+                <!--<View style="@style/Divider"/>-->
+            </com.stbl.stbl.widget.refresh.SwipeToLoadLayout>
+
+            <!--top banner-->
+            <RelativeLayout
+                android:id="@+id/theme_top_banner"
+                style="@style/top_banner"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:id="@+id/theme_top_banner_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="12dp"
+                    android:src="@drawable/back_white" />
+
+                <TextView
+                    android:id="@+id/theme_top_banner_middle"
+                    style="@style/top_banner_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:singleLine="true"
+                    android:textColor="@color/f_black"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12dp"
+                    android:src="@drawable/tribe_more_icon" />
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:padding="12dp"
+                    android:layout_toLeftOf="@id/imgMore"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/share_white" />
+
+                <View
+                    android:id="@+id/toolbar_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <!--底部栏开始-->
+        <LinearLayout
+            android:id="@+id/linBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnSendGift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/give_gift"
+                android:textColor="#2d2d2e"
+                android:textSize="16dp" />
+
+            <View style="@style/line_vertical" />
+            <!--加好友  或者 发消息-->
+
+
+            <TextView
+                android:id="@+id/btnFollow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#2d2d2e"
+                android:textSize="16dp" />
+
+            <View style="@style/line_vertical" />
+
+            <TextView
+                android:id="@+id/btnFriend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#2d2d2e"
+                android:textSize="16dp"
+                tools:text="@string/send_message" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="image"
+        android:visibility="invisible" />
+</FrameLayout>

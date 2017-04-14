@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/title_color"
+    >
+
+    <RelativeLayout style="@style/top_banner">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/dongtai_search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_logohe" />
+
+        <ImageView
+            android:id="@+id/imgScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_home_scan" />
+    </RelativeLayout>
+
+    <View style="@style/Divider"/>
+
+    <com.stbl.stbl.widget.refresh.RefreshListView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipe_style="classic">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/header_my_refresh" />
+
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:divider="@color/transparent"
+            android:dividerHeight="8dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="16dp"
+            android:scrollbars="none" />
+
+    </com.stbl.stbl.widget.refresh.RefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>ZoomIn</item>
+        <item>RotateUp</item>30
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string-array name="industry">
+        <item>服装</item>
+        <item>互联网</item>
+        <item>电子</item>
+        <item>服务</item>
+    </string-array>
+    <string-array name="buy_lvdou_list">
+        <item>10</item>
+        <item>50</item>
+        <item>200</item>
+        <item>1000</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="qq_list">
+    </string-array>
+    <string-array name="openid_list">
+    </string-array>
+    <string-array name="openkey_list">
+    </string-array>
+    <string-array name="share_list">
+        <item>微信好友</item>
+        <item>微信朋友圈</item>
+        <item>QQ好友</item>
+        <item>QQ空间</item>
+        <item>新浪微博</item>
+        <item>复制链接</item>
+        <item>更多分享</item>
+    </string-array>
+</resources>

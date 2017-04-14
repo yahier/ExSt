@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/top_banner">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/top_banner_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/top_banner_right"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@color/transparent"
+            android:text="@string/mall_search"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/edittext_search"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:layout_toRightOf="@id/btn_back"
+            android:hint="@string/mall_search_hint" />
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/et_search"
+            android:padding="10dp"
+            android:src="@drawable/clear_button"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- 条件选择栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/gray3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mall_newest"
+                android:textColor="@drawable/mall_search_item_selector"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/btn_sales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_sales_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mall_sales2"
+                android:textColor="@drawable/mall_search_item_selector"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/btn_sku"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_sku_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_sort"
+                android:text="@string/mall_price"
+                android:textColor="@drawable/mall_search_item_selector"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btn_sku_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sort"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/icon_kong"
+            android:gravity="center"
+            android:text="@string/mall_not_found_correlation_goods" />
+    </RelativeLayout>
+
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/list"
+        style="@style/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp" />
+
+    <Button
+        android:id="@+id/btn_clear_history"
+        style="@style/common_bnt_long"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mall_clear_search_history" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_item_con_rela" >
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/mine_wallet" />
+
+</RelativeLayout>

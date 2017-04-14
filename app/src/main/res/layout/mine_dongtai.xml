@@ -1,0 +1,31 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:emptyImage="@drawable/icon_kong"
+            app:emptyText="@string/me_no_status" />
+
+        <com.stbl.stbl.widget.XListView
+            android:id="@+id/list"
+            style="@style/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

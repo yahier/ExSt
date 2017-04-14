@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.stbl.stbl.widget.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="128dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_gray_light">
+
+        <TextView
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_white_corner3"
+            android:drawableLeft="@drawable/community_search"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="查找话题"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_M" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <style name="Theme.Base.AppCompat" parent="android:Theme.Holo">
+
+        &lt;!&ndash; Copy system flag values for our use &ndash;&gt;
+        <item name="windowActionBar">?android:attr/windowActionBar</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
+        <item name="dividerVertical">?android:attr/dividerVertical</item>
+        <item name="dividerHorizontal">?android:attr/dividerHorizontal</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarWidgetTheme">?attr/actionBarWidgetTheme</item>
+
+        &lt;!&ndash; Required for use of support_simple_spinner_dropdown_item.xml &ndash;&gt;
+        <item name="listPreferredItemHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:attr/listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:attr/listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:attr/listPreferredItemPaddingRight
+        </item>
+
+        &lt;!&ndash; Attributes populated from the framework to be read by apps &ndash;&gt;
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="Theme.AppCompat" parent="Theme.Base.AppCompat">
+       &lt;!&ndash; <item name="isLightTheme">false</item>&ndash;&gt;
+
+        &lt;!&ndash; Required for use of support_simple_spinner_dropdown_item.xml &ndash;&gt;
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        &lt;!&ndash;<item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>&ndash;&gt;
+       &lt;!&ndash; <item name="searchResultListItemHeight">58dip</item>&ndash;&gt;
+
+        &lt;!&ndash; Popup Menu styles &ndash;&gt;
+        &lt;!&ndash;<item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>&ndash;&gt;
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Widget.PopupMenu.Small
+        </item>
+       &lt;!&ndash; <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>&ndash;&gt;
+       &lt;!&ndash; <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>&ndash;&gt;
+
+        &lt;!&ndash; SearchView attributes &ndash;&gt;
+        &lt;!&ndash;<item name="searchDropdownBackground">@drawable/abc_search_dropdown_dark</item>&ndash;&gt;
+        <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark
+        </item>
+        <item name="searchViewCloseIcon">@drawable/abc_ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abc_ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abc_ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search</item>
+        <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?attr/selectableItemBackground</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView
+        </item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.SearchResult.Title
+        </item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.SearchResult.Subtitle
+        </item>
+&lt;!&ndash;        <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>&ndash;&gt;
+    </style>
+
+    <style name="Theme.Base.AppCompat.Light" parent="android:Theme.Holo.Light">
+
+        &lt;!&ndash; Copy system flag values for our use &ndash;&gt;
+        <item name="windowActionBar">?android:attr/windowActionBar</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
+        <item name="dividerVertical">?android:attr/dividerVertical</item>
+        <item name="dividerHorizontal">?android:attr/dividerHorizontal</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarWidgetTheme">?attr/actionBarWidgetTheme</item>
+
+        &lt;!&ndash; Required for use of support_simple_spinner_dropdown_item.xml &ndash;&gt;
+        <item name="listPreferredItemHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:attr/listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:attr/listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:attr/listPreferredItemPaddingRight
+        </item>
+
+        &lt;!&ndash; Attributes populated from the framework to be read by apps &ndash;&gt;
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light" parent="Theme.Base.AppCompat.Light">
+        <item name="isLightTheme">true</item>
+
+        &lt;!&ndash; Required for use of support_simple_spinner_dropdown_item.xml &ndash;&gt;
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner
+        </item>
+        <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
+        <item name="searchResultListItemHeight">58dip</item>
+
+        &lt;!&ndash; Popup Menu styles &ndash;&gt;
+        <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small
+        </item>
+        <item name="listPopupWindowStyle">@style/Widget.AppCompat.Light.ListPopupWindow</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.Light.ListView.DropDown</item>
+
+        &lt;!&ndash; SearchView attributes &ndash;&gt;
+        <item name="searchDropdownBackground">@drawable/abc_search_dropdown_light</item>
+        <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_light
+        </item>
+        <item name="searchViewCloseIcon">@drawable/abc_ic_clear_holo_light</item>
+        <item name="searchViewSearchIcon">@drawable/abc_ic_search_api_holo_light</item>
+        <item name="searchViewGoIcon">@drawable/abc_ic_go_search_api_holo_light</item>
+        <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search_api_holo_light</item>
+        <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_light</item>
+        <item name="searchViewEditQueryBackground">?attr/selectableItemBackground</item>
+        <item name="searchViewAutoCompleteTextView">
+            @style/Widget.AppCompat.Light.AutoCompleteTextView
+        </item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Title
+        </item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Subtitle
+        </item>
+        <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_light</item>
+
+        &lt;!&ndash; ShareActionProvider attributes &ndash;&gt;
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.Light.ActivityChooserView
+        </item>
+    </style>
+
+    <style name="ActionBarTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/de_title_bg</item>
+        <item name="android:titleTextStyle">@style/ActionBarTextStyle</item>
+        &lt;!&ndash;<item name="background">@color/de_actionbar_bg</item>
+        <item name="titleTextStyle">@style/ActionBarTextStyle</item>&ndash;&gt;
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        &lt;!&ndash; <item name="actionBarStyle">@style/ActionBar</item>&ndash;&gt;
+        &lt;!&ndash;set system bar&ndash;&gt;
+        &lt;!&ndash;<item name="android:windowTranslucentStatus">true</item>&ndash;&gt;
+        &lt;!&ndash;<item name="android:windowTranslucentNavigation">true</item>&ndash;&gt;
+        &lt;!&ndash;<item name="android:fitsSystemWindows">true</item>&ndash;&gt;
+    </style>-->
+</resources>

@@ -1,0 +1,306 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_19"
+        android:paddingTop="@dimen/dp_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/ad_service_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/ad_stbl_servie"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/ad_deadline"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/ad_one_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/ad_money"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_service_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/ad_price"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/gray_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:gravity="center_vertical"
+            android:text="@string/ad_please_select_paytype"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/iv_alipay"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/icon_ad_alipay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/iv_alipay"
+                android:text="@string/ad_alipay"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:id="@+id/iv_alipay_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_xuanze"
+                android:layout_marginRight="@dimen/dp_30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:layout_alignLeft="@+id/tv_wechat_text"
+                android:background="@color/gray_line" />
+
+            <ImageView
+                android:id="@+id/iv_wechatPay"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/icon_ad_wechat" />
+
+            <TextView
+                android:id="@+id/tv_wechat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/iv_wechatPay"
+                android:text="@string/ad_wechat_pay"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:id="@+id/iv_wechatpay_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/icon_weixuanze"
+                android:layout_marginRight="@dimen/dp_30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:layout_alignLeft="@+id/tv_otherpay_text"
+                android:background="@color/gray_line" />
+
+            <ImageView
+                android:id="@+id/iv_otherPay"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/icon_ad_pay" />
+
+            <TextView
+                android:id="@+id/tv_otherpay_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/iv_otherPay"
+                android:text="@string/ad_help_pay"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:id="@+id/iv_otherpay_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/icon_weixuanze"
+                android:layout_marginRight="@dimen/dp_30" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/common_bnt_short_red"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="@string/ad_pay"
+        android:layout_marginTop="@dimen/dp_24"
+        android:padding="@dimen/dp_10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/ad_buy_is_accept"
+            />
+        <TextView
+            android:id="@+id/tv_treaty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_yellow_e38"
+            android:textSize="@dimen/sp_12"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="@string/ad_stbl_treaty"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/ad_create_invoice_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/ll_bottom"/>
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/ad_service_phone"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_yellow_e38"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/hotline"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/ad_service_time"
+                android:layout_centerHorizontal="true"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

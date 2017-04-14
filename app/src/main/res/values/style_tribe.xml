@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="tribe_main_item">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tribe_main_gift_lin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:visibility">invisible</item>
+
+    </style>
+
+    <style name="tribe_main_gift_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black7</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tribe_title">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#9d9d9d</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tribe_right_arrow">
+        <item name="android:src">@drawable/test_right</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sign_gird_item_title">
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

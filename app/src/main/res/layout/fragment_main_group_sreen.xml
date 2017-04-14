@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/appParentId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/appParentId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgs_group_screen">
+        <!-- 视频播放控件 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/av_video_layer_ui"
+                layout="@layout/qav_video_layer_ui"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <com.stbl.stbl.ui.DirectScreen.widget.AudioMultiMembersControlsWidget
+            android:id="@+id/audio_place_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <com.stbl.base.library.danmaku.DanmaKuWidget
+            android:id="@+id/danmaku_widget"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_25" />
+
+        <ImageButton
+            android:id="@+id/audio_avatar_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@color/none_color" />
+
+        <!-- 底部控件 -->
+
+        <ImageButton
+            android:id="@+id/close_microphone_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@+id/close_speaker_ibtn"
+            android:background="@color/none_color"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_jinmai"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/close_speaker_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@+id/tv_bullet_screen"
+            android:background="@color/none_color"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_chengyuan_jinyin" />
+
+        <TextView
+            android:id="@+id/tv_bullet_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/gray_danmu_bg_shape"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_80"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="弹幕"
+            android:textColor="@color/gray1" />
+
+        <ImageButton
+            android:id="@+id/take_heart_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/take_heart_num_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/none_color"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/select_live_take_heart" />
+
+        <com.stbl.stbl.widget.risenumber.RiseNumberTextView
+            android:id="@+id/take_heart_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/take_heart_ibtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/take_heart_ibtn"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_20"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <com.stbl.base.library.pushheart.PointHeartView
+            android:id="@+id/point_heart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/danmaku_widget"
+            android:layout_marginBottom="@dimen/dp_35" />
+
+        <ImageButton
+            android:id="@+id/btn_change_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_80"
+            android:contentDescription="@null"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15"
+            android:background="#00000000"
+            android:src="@drawable/icon_circle_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

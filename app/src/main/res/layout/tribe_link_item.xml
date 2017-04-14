@@ -1,0 +1,46 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/theme_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/list_head_img_width_height"
+            android:layout_height="@dimen/list_head_img_width_height"
+            tools:src="@drawable/test" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:textColor="@color/_545454"
+            android:textSize="@dimen/font_size_content"
+            tools:text="哈市的佛光花见花开激动的法国红酒，没看" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_link"
+        android:paddingLeft="10dp"
+        android:text="链接"
+        android:textColor="@color/theme_black_a"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

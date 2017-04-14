@@ -1,0 +1,89 @@
+<!-- 商圈详情红包显示的dialog -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shopping_circle_hongbao_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+    <!-- android:background="#5500ff00"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="274"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="39dp"
+            android:src="@drawable/test"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:text="悟空"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <!--android:background="#550000ff"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="340"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--以下两个text只显示一个-->
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:text="手慢了\n红包已经抢没了"
+            android:textColor="#fcff00"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="给大家发放了一个红包"
+            android:textColor="#fcff00"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_hongbao_kai"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvShowPickList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            android:text="看看大家的手气"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/Divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.stbl.stbl.widget.refresh.RefreshListView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipe_style="classic">
+
+            <include
+                android:id="@id/swipe_refresh_header"
+                layout="@layout/header_my_refresh" />
+
+            <ListView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:clipToPadding="false"
+                android:divider="@color/transparent"
+                android:dividerHeight="8dp"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" />
+
+            <include
+                android:id="@id/swipe_load_more_footer"
+                layout="@layout/footer_my_load_more" />
+
+        </com.stbl.stbl.widget.refresh.RefreshListView>
+
+        <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:emptyImage="@drawable/icon_kong"
+            app:emptyText="@string/me_no_data" />
+
+    </RelativeLayout>
+</LinearLayout>

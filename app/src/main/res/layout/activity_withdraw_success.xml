@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="14dp"
+        android:drawableTop="@drawable/fanli_withdraw_success"
+        android:gravity="center_horizontal"
+        android:text="@string/me_withdraw_apply_commit"
+        android:textColor="@color/f_black"
+        android:textSize="16sp" />
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/me_withdraw_amount"
+            android:textColor="@color/f_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/f_red"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/me_withdraw_account"
+            android:textColor="@color/f_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:includeFontPadding="false"
+            android:text="@string/me_wechat_wallet"
+            android:textColor="@color/f_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

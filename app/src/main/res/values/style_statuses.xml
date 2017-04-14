@@ -1,0 +1,200 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="statuses_link_lin">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_margin">@dimen/edge_gap</item>
+        <item name="android:background">@color/theme_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="common_share_window_lin">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="common_share_window_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="common_share_window_text">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_content</item>
+        <item name="android:textColor">@color/black7</item>
+    </style>
+
+    <!--以下是动态-->
+    <style name="dongtai_list_name">
+        <item name="android:textSize">@dimen/font_size_list</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="shopping_square_adlevel">
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
+    <style name="dongtai_list_img_relation">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="dongtai_list_text_relation">
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">@dimen/font_size_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="dongtai_list_gender_boy">
+        <item name="android:background">@drawable/shape_boy_bg</item>
+        <item name="android:drawableLeft">@drawable/dongtai_gender_boy</item>
+        <item name="android:textSize">@dimen/font_size_remark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="dongtai_list_gender_girl">
+        <item name="android:background">@drawable/shape_red_corner32</item>
+        <item name="android:drawableLeft">@drawable/dongtai_gender_girl</item>
+        <item name="android:textSize">@dimen/font_size_remark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="dongtai_list_gender_unknow">
+        <item name="android:background">@drawable/shape_unknow_sex_bg</item>
+        <item name="android:textSize">@dimen/font_size_remark</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <!-- <item name="android:drawableLeft">@drawable/dongtai_time_icon</item>
+        <item name="android:drawablePadding">2dp</item>-->
+    <style name="dongtai_list_time">
+        <item name="android:textSize">@dimen/font_size_remark</item>
+        <item name="android:textColor">#ACACAC</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="statuses_city">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/icon_my_position</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">@dimen/font_size_remark</item>
+        <item name="android:textColor">@color/black7</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+
+    <!--以上是用户信息栏-->
+
+    <style name="statuses_grid">
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:horizontalSpacing">3dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:verticalSpacing">3dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 动态列表item的一些style -->
+    <style name="dongtai_list_num_con">
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="statuses_short_content">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="statuses_long_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="statuses_long_content">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#777777</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+
+    <style name="dongtai_list_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#B39000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="dongtai_num4_img">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+
+    <!--个人信息第二栏-->
+    <style name="statuses_userinfo_line2">
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+    <!--主内容-->
+    <style name="statuses_main_content">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="statuses_4num">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!--0623将6个单位改成了0-->
+    <style name="statuses_link_lin_empty">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+</resources>

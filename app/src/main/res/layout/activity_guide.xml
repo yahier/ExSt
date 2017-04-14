@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stbl.stbl.widget.AutoScrollViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/linLoginRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/linLoginRegister2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/layout_login"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout_login"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/selector_white_btn_alpha50"
+                android:text="@string/login_in"
+                android:textColor="#545454"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/layout_login"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/selector_white_btn_alpha50"
+                android:text="@string/register"
+                android:textColor="#545454"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linLoginRegister2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linLoginWechat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/selector_white_btn"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="6dp"
+                    android:drawableLeft="@drawable/icon_login_wechat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/wechat_login"
+                    android:textColor="#0bbb00"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_tourist"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="@dimen/dp_1"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/tourist_temp_login"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.stbl.stbl.widget.CirclePageIndicator
+        android:id="@+id/vpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linLoginRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>

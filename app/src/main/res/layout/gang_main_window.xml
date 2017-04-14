@@ -1,0 +1,94 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77333333"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="100dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/message_gang_window_text"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_group_limit"
+            android:text="进入限制" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/message_gang_window_text"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_group_invite"
+            android:text="邀请" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/message_gang_window_text"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_group_action"
+            android:text="动作" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/message_gang_window_text"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_group_taboo"
+            android:text="限时发言" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item5"
+            style="@style/message_gang_window_text"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_group_shadou"
+            android:text="撒豆" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</LinearLayout>

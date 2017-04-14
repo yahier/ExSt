@@ -1,0 +1,46 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/address_com" >
+
+        <TextView
+            style="@style/address_left"
+            android:text="发票抬头" />
+
+        <EditText
+            android:id="@+id/inputHead"
+            style="@style/address_right"
+            android:textSize="@dimen/font_size_content"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/address_com"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/address_left"
+            android:text="发票种类" />
+
+        <TextView
+            android:id="@+id/inputType"
+            style="@style/address_right"
+            android:background="@color/transparent"
+            android:textSize="@dimen/font_size_content"
+            android:text="增值税普通发票"
+            android:textColor="@color/gray1"
+            android:drawableRight="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_marginTop="40dp"
+        style="@style/common_bnt_long"
+        android:text="提 交" />
+
+</LinearLayout>

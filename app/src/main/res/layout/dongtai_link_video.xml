@@ -1,0 +1,82 @@
+<!-- 链接的视频布局-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/statuses_link_lin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/tvLinkVideoNick"
+        style="@style/dongtai_list_name"
+        tools:text="霍英"
+        android:textColor="@color/theme_brown" />
+
+    <!--android:layout_marginRight="10dp"-->
+    <TextView
+        android:text="ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+        android:id="@+id/tvLinkVideoContent"
+        style="@style/statuses_short_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:singleLine="true"
+        android:visibility="visible" />
+
+
+    <!--style="@style/statuses_link_lin"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal">
+
+        <!--装载视频-->
+        <FrameLayout
+            android:id="@+id/link_layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </FrameLayout>
+
+        <!--视频预览-->
+        <FrameLayout
+            android:id="@+id/linkViewRreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                tools:background="@drawable/bg_guide_1"
+                android:id="@+id/linkVideoCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/linkVideoStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_video_play" />
+
+            <TextView
+                tools:text="我是一个精彩的视频"
+                android:id="@+id/linkVideoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#60000000"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

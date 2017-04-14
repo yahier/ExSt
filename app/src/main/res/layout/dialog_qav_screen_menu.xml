@@ -1,0 +1,49 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colors_7f000000" >
+
+    <RelativeLayout
+        android:id="@+id/popup_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25" >
+
+        <ListView
+            android:id="@+id/popup_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgs_white_five_round_style"
+            android:cacheColorHint="@color/none_color"
+            android:divider="@color/line_bgs"
+            android:dividerHeight="@dimen/px_1"
+            android:fadingEdge="none"
+            android:listSelector="@color/none_color"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/popup_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_below="@id/popup_lv"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@color/btn_theme_yellow_style"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/popup_parent_layout"
+        android:background="@color/none_color" />
+
+</RelativeLayout>

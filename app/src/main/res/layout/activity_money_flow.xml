@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/top_banner">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+
+        <LinearLayout
+            android:id="@+id/qwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvItem1"
+                style="@style/top_banner_middle"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="@string/me_detail_wallet" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tvItem2"
+                style="@style/top_banner_middle"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="@string/me_withdraw_detail" />
+        </LinearLayout>
+
+
+
+
+        <View
+            android:id="@+id/lineTab"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@id/qwe"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgQ"
+            style="@style/top_banner_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/help_white_icon" />
+
+  />
+    </RelativeLayout>
+
+    <!--<com.stbl.stbl.widget.SlidingTabLayout-->
+        <!--android:id="@+id/sliding_tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+</LinearLayout>

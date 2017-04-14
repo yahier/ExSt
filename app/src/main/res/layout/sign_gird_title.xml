@@ -1,0 +1,40 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:background="@color/white"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="日" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="一" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="二" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="三" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="四" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="五" />
+
+    <TextView
+        style="@style/sign_gird_item_title"
+        android:text="六" />
+
+</LinearLayout>

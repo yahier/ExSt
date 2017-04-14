@@ -1,0 +1,441 @@
+<!-- 动态详细 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linFrameBig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_light"
+        android:orientation="vertical">
+
+        <com.stbl.stbl.widget.TitleBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+        <View style="@style/Divider"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <com.stbl.stbl.widget.refresh.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/swipe_to_load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:swipe_style="classic">
+
+                <include
+                    android:id="@id/swipe_refresh_header"
+                    layout="@layout/header_my_refresh" />
+
+                <com.stbl.stbl.widget.DongtaiDetailScrollView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <!-- 第一块 -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bg_white"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <!-- 个人基本资料栏 -->
+
+                                    <FrameLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+
+                                        <!--15-->
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="14dp"
+                                            android:gravity="center_horizontal"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/item_iv"
+                                                android:layout_width="53dp"
+                                                android:layout_height="53dp"
+                                                android:padding="2dp"
+                                                android:scaleType="fitXY"
+                                                tools:src="@drawable/test" />
+
+                                            <TextView
+                                                android:id="@+id/name"
+                                                style="@style/dongtai_list_name"
+                                                android:layout_marginTop="8dp"
+                                                android:textColor="#2d2d2d"
+                                                android:textSize="14sp"
+                                                tools:text="小baby" />
+
+                                            <ImageView
+                                                android:id="@+id/imgAdLever"
+                                                style="@style/shopping_square_adlevel" />
+
+                                            <TextView
+                                                android:id="@+id/tvSquareAttend"
+                                                android:layout_width="60sp"
+                                                android:layout_height="27sp"
+                                                android:layout_marginTop="9dp"
+                                                android:background="@drawable/tv_attention_sc_bg"
+                                                android:gravity="center"
+                                                android:text="@string/plus_follow"
+                                                android:textColor="#e38c01"
+                                                android:textSize="12sp"
+                                                android:visibility="gone" />
+
+
+                                        </LinearLayout>
+
+
+                                        <ImageView
+                                            android:id="@+id/imgMore"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="right"
+                                            android:layout_marginLeft="5dp"
+                                            android:padding="6dp"
+                                            android:src="@drawable/icon_statuses_arrow_down" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+
+                                <!-- 个人信息栏结束 -->
+                                <com.stbl.stbl.widget.EmojiTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/tvContent"
+                                    style="@style/statuses_short_content"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textIsSelectable="true"
+                                    android:autoLink="all"
+                                    app:emojiconSize="16sp"
+                                    tools:text="tvShortTitlddddddddddd" />
+                                <!--长微博linandroid:background="#f00"-->
+                                <FrameLayout
+                                    android:id="@+id/linContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:paddingLeft="0px"
+                                    android:paddingRight="0px">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/dongtai_detail_container"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+
+                                    <FrameLayout
+                                        android:id="@+id/linHongbaoPick"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:visibility="invisible">
+
+                                        <com.stbl.stbl.widget.CircleProgressView
+                                            android:id="@+id/circleProgressbar"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true" />
+
+                                        <com.stbl.stbl.widget.CircleImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="4dp"
+                                            android:src="@color/hongbao_round1_inner_bg" />
+
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="15dp"
+                                            android:src="@drawable/icon_gouwuquan_hongbao"
+                                            android:visibility="visible" />
+                                    </FrameLayout>
+
+                                </FrameLayout>
+
+                                <!-- android:layout_marginRight="10dp"   android:layout_marginLeft="10dp"-->
+                                <LinearLayout
+                                    android:id="@+id/linLink"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+
+                                    <include
+                                        android:id="@+id/link1"
+                                        layout="@layout/dongtai_link_card"
+                                        android:visibility="gone" />
+
+                                    <include
+                                        android:id="@+id/link4"
+                                        layout="@layout/dongtai_link_goods"
+                                        android:visibility="gone" />
+
+
+                                    <include
+                                        android:id="@+id/link8Link"
+                                        layout="@layout/dongtai_link_link"
+                                        android:visibility="gone" />
+
+                                    <include
+                                        android:id="@+id/link9Link"
+                                        layout="@layout/dongtai_link_money"
+                                        android:visibility="gone" />
+
+                                    <include
+                                        android:id="@+id/link10Ad"
+                                        layout="@layout/item_brand_plus"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                                <!--红包被抢信息 15dp-->
+                                <LinearLayout
+                                    android:id="@+id/linRpPickers"
+                                    android:layout_marginBottom="39dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="11dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvTime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#a19c98"
+                                        android:textSize="12sp" />
+
+
+                                    <LinearLayout
+                                        android:layout_marginTop="23dp"
+                                        android:visibility="gone"
+                                        android:id="@+id/linHongbaoAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="12dp"
+                                            android:layout_height="16dp"
+                                            android:src="@drawable/icon_gouwuquan_hongbao" />
+
+                                        <TextView
+                                            android:id="@+id/tvHongbaoAmount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:textColor="#ff6c6c"
+                                            android:textSize="15sp" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_reward_list"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <!--android:layout_marginBottom="10dp"-->
+                                        <com.stbl.stbl.widget.DongtaiDetailRewardLayout
+                                            android:id="@+id/layout_reward"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <!--android:paddingBottom="3dp"-->
+                                        <TextView
+                                            android:id="@+id/txtRewardCount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+
+                                            android:includeFontPadding="false"
+                                            android:paddingTop="7dp"
+                                            android:textColor="@color/font_black"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <!--抢红包信息结束-->
+
+
+                            </LinearLayout>
+
+                            <!-- 第二块 分割线下面 -->
+
+                            <View style="@style/divider_1px" />
+
+                            <View
+                                style="@style/divider_1px"
+                                android:layout_marginTop="14dp"
+                                android:background="@color/transparent" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@color/bg_white">
+
+                            <!--   android:paddingLeft="8dp"
+                                android:paddingRight="8dp"-->
+                            <TextView
+                                android:id="@+id/tv_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/comment"
+                                android:textColor="@drawable/selector_dongtai_tab_text"
+                                android:textSize="14sp" />
+
+
+                            <View
+                                style="@style/divider_1px"
+                                android:layout_alignParentBottom="true" />
+
+                            <View
+                                android:id="@+id/tab_line_comment"
+                                android:layout_width="50dp"
+                                android:layout_height="2dp"
+                                android:layout_alignLeft="@id/tv_comment"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/black" />
+
+                        </RelativeLayout>
+
+                        <com.stbl.stbl.widget.NoScrollViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </com.stbl.stbl.widget.DongtaiDetailScrollView>
+
+            </com.stbl.stbl.widget.refresh.SwipeToLoadLayout>
+
+        </FrameLayout>
+
+        <View style="@style/divider_1px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<include layout="@layout/dialog_input"/>-->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical">
+
+                <View style="@style/divider_1px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <com.rockerhieu.emojicon.EmojiconEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_keyboard_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/me_say_something"
+                        android:maxLength="200"
+                        android:maxLines="3"
+                        android:padding="4dp"
+                        android:textColor="#2d2d2d"
+                        android:textColorHint="#b2b2b2"
+                        android:textSize="16sp"
+                        app:emojiconSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_emoji"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/icon_emoji" />
+
+                    <ImageView
+                        android:id="@+id/iv_send"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/selector_keyboard_send" />
+
+                </LinearLayout>
+
+                <com.stbl.stbl.widget.EmojiKeyboard
+                    android:id="@+id/emoji_keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

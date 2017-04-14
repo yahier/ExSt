@@ -1,0 +1,81 @@
+<!-- 动态 排行榜listview的item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/iv_User"
+        android:layout_width="@dimen/list_head_img_width_height"
+        android:layout_height="@dimen/list_head_img_width_height"
+        android:layout_marginLeft="@dimen/dp_30"
+        tools:src="@drawable/def_head" />
+
+    <TextView
+        android:id="@+id/tv_Name"
+        style="@style/dongtai_list_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_toRightOf="@+id/iv_User"
+        android:includeFontPadding="false"
+        tools:text="师徒部落" />
+
+
+    <ImageView
+        android:id="@+id/iv_Sex"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/tv_Name"
+        android:layout_alignTop="@+id/tv_Name"
+        android:src="@drawable/sex_man" />
+
+    <TextView
+        android:id="@+id/tv_MineRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_Name"
+        android:layout_below="@+id/tv_Name"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5"
+        android:includeFontPadding="false"
+        android:text="第1名"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_22">
+
+        <TextView
+            android:id="@+id/tv_Tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活跃指数"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray_a4" />
+
+        <TextView
+            android:id="@+id/tv_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_red"
+            android:layout_below="@+id/tv_Tip"
+            android:layout_alignRight="@+id/tv_Tip"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold|italic"
+            android:paddingRight="@dimen/dp_2"
+            android:gravity="center"
+            tools:text="234" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

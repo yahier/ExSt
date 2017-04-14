@@ -1,0 +1,56 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linMine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_red" />
+
+        <include layout="@layout/dongtai_rank_list5_item" />
+    </LinearLayout>
+
+
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/dongtai_rank_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="15dp"
+        android:overScrollMode="never"/>
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/theme_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_kong" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/not_date"
+            android:textColor="@color/gray2"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

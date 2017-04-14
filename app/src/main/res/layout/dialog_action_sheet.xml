@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#efefef"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" />
+
+    <!-- android:background="@drawable/selector_yellow_btn"-->
+    <TextView
+        android:background="@drawable/selector_white_btn"
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/me_cancel"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

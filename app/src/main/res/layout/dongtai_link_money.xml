@@ -1,0 +1,43 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/statuses_link_lin"
+              android:layout_margin="0dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <!--父View的高度需要代码计算-->
+    <FrameLayout
+        android:id="@+id/linImg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/test"/>
+
+        <ImageView
+            android:id="@+id/link8Img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:maxLines="2"
+        android:textColor="@color/gray1"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="我是一个精彩链接"/>
+
+
+</LinearLayout>

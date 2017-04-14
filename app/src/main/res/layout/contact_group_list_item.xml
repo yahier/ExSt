@@ -1,0 +1,18 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_item_con_rela" >
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/mine_wallet"
+        android:text="虎门服装商行" />
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/mine_account_main_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="1008" />
+
+</RelativeLayout>

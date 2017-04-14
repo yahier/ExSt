@@ -1,0 +1,47 @@
+<!-- 只用作整个文件复制用 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/audio_anim_iv"
+        android:layout_width="@dimen/dp_54"
+        android:layout_height="@dimen/dp_54"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:src="@anim/direct_anim_iv"/>
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/audio_avatar"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@color/transparent"/>
+
+    <ImageView
+        android:id="@+id/audio_close_micephone"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@drawable/icon_jingmai_hong"
+        android:layout_marginTop="@dimen/dp_46"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/audio_name"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

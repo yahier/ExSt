@@ -1,0 +1,53 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <!-- 下面是操作栏 -->
+
+    <RelativeLayout
+        android:id="@+id/setting_item1"
+        style="@style/common_item_con_rela"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            style="@style/mine_wallet"
+            android:text="国家和地区" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            style="@style/mine_account_main_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="中国大陆+86" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_item5"
+        style="@style/common_item_con_rela" >
+
+        <TextView
+            style="@style/mine_wallet"
+            android:text="新手机号" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/transparent"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:src="@drawable/test_right" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/common_btn"
+        style="@style/common_bnt_long"
+        android:layout_marginTop="50dp"
+        android:text="下 一 步" />
+
+</LinearLayout>

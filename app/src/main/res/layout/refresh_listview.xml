@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stbl.stbl.widget.refresh.RefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipe_style="classic">
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/header_my_refresh" />
+
+    <ListView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/footer_my_load_more" />
+
+</com.stbl.stbl.widget.refresh.RefreshListView>

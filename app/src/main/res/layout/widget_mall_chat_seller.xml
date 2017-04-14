@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        tools:text="345678"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar"
+        android:maxLines="2"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_L" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:textColor="@color/font_red"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/tv_price"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_M" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignBottom="@id/avatar"
+        android:layout_alignParentRight="true"
+        android:background="@color/theme_red_bg_round"
+        android:text="@string/mall_send_goods"
+        android:textColor="@color/font_red"
+        android:textSize="@dimen/font_L"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"/>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_wechat_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/fanli_withdraw_account_wechat" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_wechat"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wechat_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/me_weixin_wallet"
+                android:textColor="@color/f_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_wechat_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/f_gray"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_bind_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/test_right"
+            android:gravity="center_vertical"
+            android:text="@string/me_go_bind"
+            android:textColor="@color/f_gray"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divider" />
+
+    <com.stbl.stbl.widget.StblWebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

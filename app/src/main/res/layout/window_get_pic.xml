@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99333333"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_thin_white_btn_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/item_popupwindows_Photo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:text="@string/choose_from_album"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+        <View style="@style/line_horizontal"
+            android:id="@+id/v_line" />
+
+        <Button
+            android:id="@+id/item_popupwindows_camera"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:text="@string/take_photo"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/item_popupwindows_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_thin_yellow_btn_bg"
+        android:text="@string/camera_cancel"
+        android:textColor="#585858"
+        android:textSize="18sp" />
+
+</LinearLayout>

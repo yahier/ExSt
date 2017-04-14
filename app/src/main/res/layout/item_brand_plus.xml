@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_banner_default"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_ad_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7f000000"
+        android:text="广告"
+        android:textColor="@color/white"
+        android:textSize="7sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/iv_cover"
+        android:background="@drawable/shape_ad_bottom"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="1dp"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/def_head" />
+
+        <TextView
+            android:id="@+id/tvAdBusinessType"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_red_stroke"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/me_recruit_agent"
+            android:textColor="@color/f_red"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/tvAdBusinessType"
+            android:layout_toRightOf="@id/iv_logo"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingRight="6dp"
+            android:textColor="@color/f_black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_float"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone">
+
+        <com.stbl.stbl.widget.RealtimeBlurView
+            android:id="@+id/blur_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:realtimeBlurRadius="15dp"
+            app:realtimeOverlayColor="#9a000000" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="52dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/def_head" />
+
+        <ImageView
+            android:id="@+id/iv_crown"
+            android:layout_width="70dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="39dp"
+            android:src="@drawable/icon_bigchief_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_head"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:textColor="@color/f_white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_ad_chief_logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/tv_nick"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tv_nick"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_family_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nick"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:textColor="@color/f_white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_student_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_family_amount"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_family_amount"
+            android:textColor="@color/f_white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_nearest_bigchief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_family_amount"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:textColor="@color/f_white"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_nearest_chief_logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/tv_nearest_bigchief"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tv_nearest_bigchief" />
+
+        <TextView
+            android:id="@+id/tv_view_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv_nearest_bigchief"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_yellow_stroke"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/me_view_homepage"
+            android:textColor="#ffdf34"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/ad_item_float_close" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

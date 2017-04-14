@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/dialogWidth"
+                android:layout_height="@dimen/dialogHeight">
+
+    <ImageView
+        android:id="@+id/iv_open_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_envelope_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_closed"
+        android:layout_width="@dimen/size114px"
+        android:layout_height="@dimen/size114px"
+        android:layout_alignParentRight="true"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rp_pick_window_close"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_closed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_rp_pick_window_avator_bg">
+
+        <ImageView
+            android:padding="1.5dp"
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/size198px"
+            android:layout_height="@dimen/size198px"
+            android:layout_gravity="center"
+            android:src="@drawable/rp_avatar"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_avatar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size30px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="10"
+        android:maxLines="1"
+        android:textColor="#fbe6a2"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/tv_open_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username"
+        android:layout_marginLeft="@dimen/size60px"
+        android:layout_marginRight="@dimen/size60px"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#fbe6a2"
+        android:textSize="13dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_open_title"
+        android:layout_marginLeft="@dimen/size60px"
+        android:layout_marginRight="@dimen/size60px"
+        android:layout_marginTop="@dimen/size60px"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLength="22"
+        android:textColor="#fbe6a2"
+        android:textSize="24dp"/>
+
+
+    <!-- android:layout_marginLeft="@dimen/size225px"
+        android:layout_marginRight="@dimen/size225px"-->
+    <FrameLayout
+        android:id="@+id/linOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_closed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp">
+
+        <Button
+            android:id="@+id/btn_open_money"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_rp_openbtn_bg"
+            android:text="開"
+            android:textColor="#ca3e33"
+            android:textSize="40dp"/>
+    </FrameLayout>
+    <!--看看大家的手气-->
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_check_lucky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linOpen"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/check_lucky"
+        android:textColor="#fbe6a2"
+        android:textSize="12dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/target_layout"
+        android:layout_width="@dimen/size180px"
+        android:layout_height="@dimen/size180px"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"/>
+</RelativeLayout>

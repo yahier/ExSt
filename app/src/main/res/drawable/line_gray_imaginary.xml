@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <stroke android:color="@color/gray_line"
+        android:dashGap="@dimen/dp_3"
+        android:dashWidth="@dimen/dp_6"
+        android:width="@dimen/dp_1"
+        />
+    <!--需要大于stroke width 的值-->
+    <size android:height="@dimen/dp_10"/>
+</shape>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_new_friend"
+        style="@style/contacts_header_item">
+
+        <ImageView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_new_friends"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dp_13"
+            android:text="@string/im_new_friend"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/common_red_shape_small"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_remark"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginLeft="@dimen/dp_12"/>
+
+    <LinearLayout
+        android:id="@+id/layout_add_friend"
+        style="@style/contacts_header_item">
+
+        <ImageView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/ic_add_friend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_13"
+            android:text="@string/add_friend"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginLeft="@dimen/dp_12"/>
+
+    <LinearLayout
+        android:id="@+id/layout_discussion"
+        style="@style/contacts_header_item">
+
+        <ImageView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_discuss"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_13"
+            android:text="@string/im_discussion"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_friend_category"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvFriendClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_friend_category"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/friend_category"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>

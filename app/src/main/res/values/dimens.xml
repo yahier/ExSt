@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 帮群中的显示图像的宽高大小 -->
+    <dimen name="im_group_info_img">80dp</dimen>
+    <dimen name="list_head_img_width_height">45dp</dimen>
+    <dimen name="list_statuses_remark_head_img_width_height">40dp</dimen>
+    <dimen name="list_praise_head_img_width_height">35dp</dimen>
+    <dimen name="dongtai_item_drawablePadding">-60px</dimen>
+    <dimen name="dongtai_detail_lin_container_padding_amount">20dp</dimen>
+    <dimen name="statuses_right_padding">60dp</dimen>
+    <dimen name="tribe_zongshi_wh">40dp</dimen>
+    <!-- wheelView -->
+    <dimen name="wheel_view_text_size">16sp</dimen>
+    <dimen name="wheel_view_text_size_selected">18sp</dimen>
+    <dimen name="cart_delete_width">80dp</dimen>
+    <dimen name="emoji_width_height">24dp</dimen>
+    <dimen name="maintab_textbottom">5dp</dimen>
+    <dimen name="maintab_height1">50dp</dimen>
+    <dimen name="BasicTextSize">15dp</dimen>
+    <dimen name="bangyibang_line_height">1px</dimen>
+    <dimen name="bangyibang_font_large">20sp</dimen>
+    <dimen name="bangyibang_font_big">18sp</dimen>
+    <dimen name="bangyibang_font_general">17sp</dimen>
+    <dimen name="bangyibang_font_small">16sp</dimen>
+    <!-- 字体大小统一规范 -->
+    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_title">18sp</dimen>
+    <dimen name="font_size_list">16sp</dimen>
+    <dimen name="font_size_content">14sp</dimen>
+    <dimen name="font_size_remark">12sp</dimen>
+    <dimen name="font_size_icon">10sp</dimen>
+    <dimen name="font_size_redpoint">9sp</dimen>
+    <!-- 界面左右边距 -->
+    <dimen name="edge_gap">14sp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="gray_big_divider">14dp</dimen>
+    <dimen name="margin_box_btn">65dp</dimen>
+
+
+</resources>

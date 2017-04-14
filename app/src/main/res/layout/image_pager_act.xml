@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.stbl.stbl.widget.ViewPagerFixed
+        android:id="@+id/item_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/theme_top_banner"
+        style="@style/top_banner"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent" >
+
+        <ImageView
+            android:id="@+id/findpeople_tview_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_white" />
+
+        <!--<ImageView
+            android:visibility="gone"
+            android:id="@+id/findpeople_iview_right"
+            style="@style/top_banner_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_photo_grid" />-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/findpeople_iview_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray_a4"
+            android:text="进入相册"
+            />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="保存"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_L"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_index"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="0/1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="bottom"
+        />
+
+    <!--<com.stbl.stbl.widget.CirclePageIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/vpi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        app:fillColor="#f7cd2c"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp"
+        app:pageColor="#fefff7"
+        app:radius="4dp"
+        android:visibility="gone"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />-->
+
+</FrameLayout>

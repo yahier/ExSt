@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StartTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="blackTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+
+    <style name="redTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/bg_rp_red</item>
+        <item name="colorPrimaryDark">@color/bg_rp_red</item>
+        <item name="colorAccent">@color/bg_rp_red</item>
+    </style>
+</resources>

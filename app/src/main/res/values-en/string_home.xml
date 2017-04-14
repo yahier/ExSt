@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--扫描-->
+    <string name="flash_light">Flash Light</string>
+    <string name="Align_QR_code_within_the_frame_to_scan">Align QR code within the frame to scan</string>
+    <string name="no_qr_code_found">NO QR code found</string>
+    <string name="please_scan_friend_qr">Please scan your friends’ QR code</string>
+    <!--首页-->
+    <string name="search">Search</string>
+    <string name="weekly_rank">Weekly Ranking</string>
+    <string name="contest_with_others">Contest with each other</string>
+    <string name="st_mall">Shitu Store</string>
+    <string name="there_is_always_got_one_for_you">A suitable one for you!</string>
+    <string name="big_chief">Chief</string>
+    <string name="Recommend_goods">Recommend goods</string>
+    <string name="help_you_to_find_people">I can find someone to help you</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_statuses">News Feed</string>
+    <string name="tab_im">Message</string>
+    <string name="tab_me">Me</string>
+    <string name="exchange_mall">Exchange mall</string>
+
+    <string name="goods_ready_for_you_to_exchange">Plenty of goods for you</string>
+    <string name="long_statuses">Article </string>
+    <string name="short_statuses">Text</string>
+    <string name="search_user">Search user</string>
+    <string name="no_master_to_find">You don\’t have a master, let\'s go to see</string>
+    <string name="i_wanna_shoutu">Recruit</string>
+    <string name="i_wanna_hang">Store </string>
+    <string name="update_account">Upgrade</string>
+    <string name="look_previous_message">View earlier news</string>
+    <string name="no_more_message">No more news</string>
+    <string name="no_message_yet">No news</string>
+    <string name="choose_picture">Choose photo</string>
+</resources>

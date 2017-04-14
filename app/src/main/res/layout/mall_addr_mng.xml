@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.stbl.stbl.widget.titlebar.NavigationView
+        android:id="@id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/v_top_line"
+        android:layout_below="@id/navigation_view"
+        style="@style/Divider"/>
+
+    <Button
+        android:id="@id/controls1"
+        style="@style/mall_bottom_button"
+        android:onClick="onClickNewAddress"
+        android:layout_alignParentBottom="true"
+        android:text="@string/mall_add_new_address" />
+
+    <com.stbl.stbl.widget.XListView
+        android:id="@+id/lv_content"
+        style="@style/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_top_line"
+        android:layout_above="@id/controls1"
+        android:divider="@color/theme_bg"
+        android:dividerHeight="15dp"
+        android:listSelector="@color/none_color"
+        android:cacheColorHint="@color/none_color"
+        android:overScrollMode="never"/>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray1"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp_16"
+        android:drawableTop="@drawable/icon_kong"
+        android:drawablePadding="@dimen/dp_15"
+        android:text="@string/mall_no_address"
+        android:visibility="gone"/>
+
+</RelativeLayout>

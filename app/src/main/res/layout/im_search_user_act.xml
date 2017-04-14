@@ -1,0 +1,101 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout style="@style/top_banner">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:layout_marginRight="@dimen/dp_2"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/input"
+            style="@style/edittext_search"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/iv_clear"
+            android:layout_toRightOf="@id/iv_back"
+            android:hint="@string/input_nick_or_phone"
+             />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_register_delete"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/search_btn"/>
+
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.stbl.stbl.widget.XListView
+            android:id="@+id/list"
+            style="@style/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- <com.stbl.stbl.widget.PowerImageView
+                xmlns:attr="http://schemas.android.com/apk/res/com.stbl.stbl"
+                android:id="@+id/gifView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhanweifu_sousuo"
+                attr:auto_play="true" /> -->
+            <ImageView
+                android:id="@+id/gifView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_kong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="@string/not_found_related_user_try_another_word"
+                android:textColor="@color/f_gray"
+                android:textSize="@dimen/font_size_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="login_in">登录</string>
+	<string name="register">注册</string>
+	<string name="wechat_login">微信登录</string>
+	<string name="tourist_temp_login">游客试用</string>
+    <string name="wechat_no_authorized">没有获得微信授权</string>
+    <string name="country_region">国家/地区</string>
+    <string name="phone_number">手机号码</string>
+	<string name="password">密码</string>
+	<string name="forget_password">忘记密码</string>
+	<string name="other_login_type">其它登录</string>
+	<string name="please_choose_country_code">请选择国家区号</string>
+	<string name="please_input_phone_number">请输入手机号码</string>
+	<string name="please_input_account_pwd">请输入登录密码</string>
+	<string name="pwd_must_more_than_6">请输入6位数以上的密码</string>
+	<string name="logging">登录中</string>
+	<string name="verify_code">验证码</string>
+	<string name="sms_verify_code">短信验证码</string>
+	<string name="obtain_verify_code">获取验证码</string>
+	<string name="obtain_sms_verify_code">获取短信验证码</string>
+	<string name="login_in_btn">登 录</string>
+	<string name="please_input_verify_code">请输入验证码</string>
+	<string name="sent_verify_code_please_check">验证码已发送,请注意查收</string>
+	<string name="nick_canot_be_null">昵称不能为空</string>
+	<string name="nickname">昵称</string>
+	<string name="next_step">下一步</string>
+	<string name="resend_verify_code">重发验证码</string>
+	<string name="registering">注册中...</string>
+	<string name="failed_to_upload_head_img">头像上传失败</string>
+	<string name="register_success">注册成功</string>
+	<string name="head_img_upload_success">头像上传成功</string>
+	<string name="please_input_6_20_length_pwd">请填写6-20位字符密码</string>
+	<string name="register_">注 册</string>
+	<string name="recommend_master">推荐师傅</string>
+	<string name="Ta_has_not_upload_img">Ta还没有上传图片</string>
+	<string name="choose">选择</string>
+	<string name="ensure_master">确认师傅</string>
+	<string name="baishi_success">拜师成功</string>
+	<string name="not_choose_master">未选师傅</string>
+	<string name="find_master_in_below_types">通过以下方式查找师傅</string>
+	<string name="recommend">推荐</string>
+	<string name="join_tribe">加入部落</string>
+	<string name="add_link_card_collection"><Data><![CDATA[<font color="#FF6C6C">添加链接</font><font color="#aaaaaa">(名片,收藏)</font>]]></Data></string>
+	<string name="select_industry">选择行业方向</string>
+	<string name="please_select_industry">请先选择行业方向</string>
+	<string name="update_success">更新成功</string>
+</resources>

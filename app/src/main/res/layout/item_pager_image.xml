@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+
+    <com.stbl.stbl.widget.PhotoView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <View
+        android:id="@+id/v_touch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        />
+    <TextView
+        android:id="@+id/tv_replay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="点击重试"
+        android:padding="@dimen/dp_15"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"/>
+
+</FrameLayout>

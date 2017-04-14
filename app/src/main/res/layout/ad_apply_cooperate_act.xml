@@ -1,0 +1,109 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imgAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- android:background="@color/input_bg"  -->
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/shape_et_bg_fafafa"
+            android:hint="姓名"
+            android:paddingLeft="10dp"
+            android:textColor="#2d2d2d"
+            android:textColorHint="#a19c98"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/inputArea"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/shape_et_bg_fafafa"
+            android:drawableRight="@drawable/icon_arrow_down_small"
+            android:gravity="center_vertical"
+            android:hint="请选择国家/地区"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#2d2d2d"
+            android:textColorHint="#a19c98"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_et_bg_fafafa"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#2d2d2d"
+            android:textColorHint="#a19c98"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/inputDes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_et_bg_fafafa"
+            android:gravity="top"
+            android:hint="给Ta留言"
+            android:padding="10dp"
+            android:textColor="#2d2d2d"
+            android:textColorHint="#a19c98"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="#a19c98"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvCommit"
+            android:layout_width="match_parent"
+            android:layout_height="49sp"
+            android:background="@drawable/register_btn_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="申请合作"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bingo:"
+        android:textColor="#E28A00"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.stbl.stbl.widget.TextViewFixTouchConsume xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_remark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#121212"
+        app:emojiconSize="13sp"
+        android:textSize="12sp" />
+
+</LinearLayout>

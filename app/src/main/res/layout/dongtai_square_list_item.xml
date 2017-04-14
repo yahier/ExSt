@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/main_zone"
+        style="@style/dongtai_list_visible_con"
+        android:orientation="vertical">
+
+        <!-- 一直到四个数字操作栏 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <com.stbl.stbl.widget.RoundImageView
+                android:id="@+id/item_iv"
+                android:layout_width="@dimen/list_head_img_width_height"
+                android:layout_height="@dimen/list_head_img_width_height"
+                android:scaleType="fitXY"
+                tools:src="@drawable/test" />
+
+            <LinearLayout style="@style/dongtai_list_info_con">
+
+                <!-- 个人信息和右边图像 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- 个人信息开始 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/name"
+                                style="@style/dongtai_list_name"
+                                tools:text="小baby" />
+
+                            <ImageView
+                                android:id="@+id/imgAuthorized"
+                                style="@style/list_authorized" />
+
+                            <TextView
+                                android:id="@+id/relation"
+                                style="@style/dongtai_list_text_relation"
+                                android:layout_marginLeft="7dp"
+                                tools:text="师傅" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/statuses_userinfo_line2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/gender_age"
+                                style="@style/dongtai_list_gender_girl"
+                                tools:text="22" />
+
+                            <TextView
+                                android:id="@+id/tvCity"
+                                style="@style/statuses_city"
+                                tools:text="广州" />
+
+                            <TextView
+                                android:id="@+id/time"
+                                style="@style/dongtai_list_time"
+                                tools:text="40分钟之前" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 个人信息结束 -->
+
+                    <TextView
+                        android:id="@+id/tvFollowState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textColor="@color/theme_black_a"
+                        android:textSize="12sp"
+                        tools:text="已关注" />
+                </LinearLayout>
+
+                <!-- 内容 图片 -->
+
+                <LinearLayout
+                    style="@style/statuses_main_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvShortTitle"
+                        style="@style/statuses_short_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        tools:text="tvShortTitle 内容是的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的" />
+
+                    <LinearLayout
+                        android:id="@+id/linLongSpe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.stbl.stbl.widget.ImageGridView
+                            android:id="@+id/item_gv"
+                            style="@style/statuses_grid"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tvLongTitle"
+                            style="@style/statuses_long_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="4dp"
+                            android:singleLine="true"
+                            tools:text="main_dongtai_content2 的sss" />
+
+                        <TextView
+                            android:id="@+id/tvLongContent"
+                            style="@style/statuses_long_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            tools:text="长微博的内容、、、、、、、、师大附小给你吧方大同过 的sss" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linLink"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            style="@style/statuses_link_lin_empty"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white" />
+
+                        <include
+                            android:id="@+id/link1"
+                            layout="@layout/dongtai_link_card"
+                            android:visibility="gone" />
+
+                        <include
+                            android:id="@+id/link2"
+                            layout="@layout/dongtai_link_wish"
+                            android:visibility="gone" />
+
+                        <include
+                            android:id="@+id/link3"
+                            layout="@layout/dongtai_link_collected_dongtai"
+                            android:visibility="gone" />
+
+                        <include
+                            android:id="@+id/link4"
+                            layout="@layout/dongtai_link_goods"
+                            android:visibility="gone" />
+
+                        <include
+                            android:id="@+id/link5"
+                            layout="@layout/dongtai_link_live"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <!-- 四个动态数字显示栏 -->
+
+                    <LinearLayout
+                        style="@style/statuses_4num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/dongtai_list_num_con">
+
+                            <TextView
+                                android:id="@+id/item_text1"
+                                style="@style/dongtai_list_num_text"
+                                android:drawableLeft="@drawable/dongtai_item1"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/dongtai_list_num_con">
+
+                            <TextView
+                                android:id="@+id/item_text2"
+                                style="@style/dongtai_list_num_text"
+                                android:drawableLeft="@drawable/dongtai_item2"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/dongtai_list_num_con">
+
+                            <TextView
+                                android:id="@+id/item_text3"
+                                style="@style/dongtai_list_num_text"
+                                android:drawableLeft="@drawable/dongtai_item3"
+                                android:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/dongtai_list_num_con">
+
+                            <TextView
+                                android:id="@+id/item_text4"
+                                style="@style/dongtai_list_num_text"
+                                android:drawableLeft="@drawable/dongtai_item4"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!-- 四个动态item结束 -->
+                </LinearLayout>
+                <!-- 主内容和图片结束 -->
+            </LinearLayout>
+            <!-- 个人信息结束 -->
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 点赞人图像 -->
+
+    <View
+        style="@style/line_horizontal"
+        android:background="@color/gray3" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="@color/theme_bg" />
+
+</LinearLayout>

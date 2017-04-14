@@ -1,0 +1,80 @@
+<!-- 车源 选择城市 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@drawable/wheelmenu_top"
+        android:visibility="gone"
+         />
+	<View style="@style/line_horizontal"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/window_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/camera_cancel"
+            android:textColor="@color/gray1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/camera_cancel"
+            android:layout_gravity="center"
+            android:textColor="@color/theme_red"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/window_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="@string/mall_done"
+            android:textColor="@color/gray1"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <View
+        style="@style/line_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:id="@+id/dateselect"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        >
+
+        <com.example.dateselect.util.WheelView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

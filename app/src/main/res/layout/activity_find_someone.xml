@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_red"
+        android:text="@string/me_publish"
+        android:textColor="#fff"
+        android:textSize="@dimen/bangyibang_font_big" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_publish"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_title"
+                    android:textColor="@color/bangyibang_textcolor1"
+                    android:textSize="@dimen/bangyibang_font_big" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_gray_stroke">
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|left"
+                        android:hint="@string/me_you_want_to_find_what_people"
+                        android:minLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/bangyibang_textcolor1"
+                        android:textColorHint="@color/bangyibang_textcolor_grey"
+                        android:textSize="@dimen/bangyibang_font_big" />
+
+                    <TextView
+                        android:id="@+id/tv_title_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/et_title"
+                        android:padding="8dp"
+                        android:text="0/25"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bangyibang_line_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bangyibang_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_desc"
+                    android:textColor="@color/bangyibang_textcolor1"
+                    android:textSize="@dimen/bangyibang_font_big" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_gray_stroke">
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|left"
+                        android:hint="@string/me_say_your_demand"
+                        android:minLines="5"
+                        android:padding="10dp"
+                        android:textColor="@color/bangyibang_textcolor1"
+                        android:textColorHint="@color/bangyibang_textcolor_grey"
+                        android:textSize="@dimen/bangyibang_font_big" />
+
+                    <TextView
+                        android:id="@+id/tv_content_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/et_content"
+                        android:padding="8dp"
+                        android:text="0/150"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bangyibang_line_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bangyibang_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_industry"
+                    android:textColor="@color/bangyibang_textcolor1"
+                    android:textSize="@dimen/bangyibang_font_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_gray_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_industry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/me_choose_industry"
+                        android:singleLine="true"
+                        android:textColor="@color/bangyibang_textcolor1"
+                        android:textColorHint="@color/bangyibang_textcolor_grey"
+                        android:textSize="@dimen/bangyibang_font_big" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ssdk_recomm_plats_more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bangyibang_line_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bangyibang_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赏金"
+                    android:textColor="@color/bangyibang_textcolor1"
+                    android:textSize="@dimen/bangyibang_font_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_bounty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_gray_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_bounty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="0"
+                        android:textColor="@color/bangyibang_textcolor1"
+                        android:textColorHint="@color/bangyibang_textcolor_grey"
+                        android:textSize="@dimen/bangyibang_font_big" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:hint="金豆"
+                        android:textColorHint="@color/bangyibang_textcolor_grey"
+                        android:textSize="@dimen/bangyibang_font_big" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ssdk_recomm_plats_more" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="40dip"
+        android:horizontalSpacing="0dip"
+        android:listSelector="@drawable/selector_white_btn"
+        android:numColumns="8"
+        android:scrollbars="vertical"
+        android:verticalSpacing="0dip" />
+</RelativeLayout>

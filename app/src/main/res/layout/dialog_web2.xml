@@ -1,0 +1,31 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_web_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/imgClose"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/shape_dongtai_item_focused"
+        android:gravity="center"
+        android:padding="8dp"
+        android:src="@drawable/icon_close"
+        android:text="知道了"
+        android:textColor="#2d2d2d"
+        android:textSize="14dp" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+		<ImageView
+		    android:id="@+id/imgGoods"
+		    android:layout_width="70dp"
+		    android:layout_height="70dp"
+		    android:layout_marginTop="20dp"
+		    android:layout_gravity="center_horizontal" 
+		    android:src="@drawable/plugin_camera_no_pictures"
+	           />
+		<TextView
+		    android:layout_width="200dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8dp"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:textSize="18dp"
+		    android:textColor="@color/black"
+		    android:text="@string/mall_receiving_success_tips"
+            />
+        <Button
+            android:id="@+id/btnRemark"
+            style="@style/common_bnt_long"
+            android:layout_marginTop="20dp"
+            android:text="@string/mall_remark_goods" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/mall_guess_you_like"
+        android:textColor="@color/theme_black_a" />
+
+    <GridView
+        android:id="@+id/gridGoods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2" />
+
+</LinearLayout>

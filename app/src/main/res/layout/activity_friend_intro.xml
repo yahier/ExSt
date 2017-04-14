@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_view_tribe"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_update_cancel"
+            android:text="@string/me_view_tribe"
+            android:textColor="#646464"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_update_confirm"
+            android:text="@string/send_message"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        style="@style/divider_1px"
+        android:layout_above="@id/layout_bottom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/iv_head_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/friend_intro_head_bg" />
+
+                <com.stbl.stbl.widget.RoundImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/def_head" />
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#2d2d2d"
+                    android:textSize="@dimen/font_L" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_remark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_96px"
+                android:background="@drawable/list_selector_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_remark"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_L" />
+
+                <TextView
+                    android:id="@+id/tv_alias"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_L" />
+
+                <ImageView
+                    android:id="@+id/iv_alias_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/test_right" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_1px"
+                android:layout_marginLeft="@dimen/padding_left" />
+
+            <RelativeLayout
+                android:id="@+id/layout_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_white"
+                android:minHeight="@dimen/item_96px"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left">
+
+                <TextView
+                    android:id="@+id/tv_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_96px"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/me_album"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_L" />
+
+                <TextView
+                    android:id="@+id/tv_album_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_96px"
+                    android:layout_toRightOf="@id/tv_album"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/me_ta_not_yet_upload_photo"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_L" />
+
+                <LinearLayout
+                    android:id="@+id/layout_album_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_album"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_top"
+                    android:paddingTop="@dimen/padding_top">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider_status"
+                style="@style/divider_1px"
+                android:layout_marginLeft="@dimen/padding_left" />
+
+            <RelativeLayout
+                android:id="@+id/layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_white"
+                android:minHeight="@dimen/item_96px"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_96px"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/me_status"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_L" />
+
+                <TextView
+                    android:id="@+id/tv_status_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_96px"
+                    android:layout_toRightOf="@id/tv_status"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/me_ta_not_yet_publish_status"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_L" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_status_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_status"
+                    android:paddingBottom="@dimen/padding_top"
+                    android:paddingTop="@dimen/padding_top">
+
+                    <ImageView
+                        android:id="@+id/iv_status_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop" />
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_status_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_status_image"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/iv_status_image"
+                        android:maxLines="2"
+                        android:textColor="#2d2d2d"
+                        android:textIsSelectable="true"
+                        android:textSize="14sp"
+                        app:emojiconSize="15sp" />
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_status_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignTop="@id/iv_status_image"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:layout_toRightOf="@id/iv_status_image"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:textColor="#2d2d2d"-->
+                    <!--android:textSize="14sp" />-->
+
+                    <TextView
+                        android:id="@+id/tv_status_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_status_image"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toRightOf="@id/iv_status_image"
+                        android:maxLines="1"
+                        android:textColor="#a19c98"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/divider_1px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/layout_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/tribe_tiny_info_more" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

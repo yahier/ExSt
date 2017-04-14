@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_seller_order_return"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/mall_order_pay"
+        android:textColor="@color/gray1"
+        android:textSize="16sp" />
+
+    <View style="@style/line_horizontal" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mall_input_pay_password"
+        android:textColor="@color/gray1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray1"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!-- android:inputType="phone" -->
+    <com.stbl.base.gridpasswordview.GridPasswordView
+        android:id="@+id/gpv_normal"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        app:gpvLineColor="@color/gray_line"
+        app:gpvLineWidth="1dp"
+        app:gpvTextColor="@color/font_black"
+        app:gpvTextSize="@dimen/sp_16"
+        />
+
+    <!--<EditText
+        android:id="@+id/inputPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:inputType="phone"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_black_a"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+
+        <ImageView
+            style="@style/pay_pwd_img" />
+    </LinearLayout>-->
+
+</LinearLayout>

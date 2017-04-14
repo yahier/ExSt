@@ -1,0 +1,113 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linBig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    >
+
+    <!-- top banner -->
+
+    <RelativeLayout style="@style/top_banner">
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/dongtai_search" />
+
+        <LinearLayout
+            android:id="@+id/qwe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvAttend"
+                style="@style/top_banner_middle"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:text="@string/label_attention" />
+
+            <TextView
+                android:id="@+id/tvSquare"
+                style="@style/top_banner_middle"
+                android:layout_width="60dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:gravity="center"
+                android:text="@string/label_square" />
+
+            <TextView
+                android:id="@+id/tvShoppingCircle"
+                style="@style/top_banner_middle"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:text="@string/shopping_circle" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/lineTab"
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@id/qwe"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/icon_statuses_notify"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/iv_newmessage_point"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_8"
+            android:layout_alignRight="@+id/imgNotify"
+            android:layout_alignTop="@+id/imgNotify"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_round_red_point"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray_light"
+            android:orientation="vertical">
+
+            <com.stbl.stbl.widget.SlidingTabLayout
+                android:id="@+id/sliding_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:visibility="gone" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

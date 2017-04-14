@@ -1,0 +1,202 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/theme_top_banner"
+        style="@style/top_banner">
+
+        <TextView
+            android:id="@+id/theme_top_banner_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel" />
+
+        <!--android:layout_toRightOf="@+id/theme_top_banner_left"-->
+        <TextView
+            android:id="@+id/theme_top_banner_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/write_short_statuses"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_title" />
+
+        <TextView
+            android:id="@+id/weibo_pulish"
+            style="@style/top_banner_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:text="@string/post" />
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/edge_gap"
+                android:paddingRight="@dimen/edge_gap"
+                android:paddingTop="@dimen/edge_gap"
+                android:visibility="visible">
+
+                <com.rockerhieu.emojicon.EmojiconEditText xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dongtai_content_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/write_something"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:textColor="#545454"
+                    android:textSize="@dimen/font_L"
+                    app:emojiconSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvLeftCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="right"
+                    android:text="0/140"
+                    android:textColor="@color/theme_black_a"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line_horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp" />
+
+                <!-- 270dp -->
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridView
+                        android:id="@+id/noScrollgridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="270dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="2dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/add_photo"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- 链接及其以下 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#f5f5f5"
+                android:orientation="vertical">
+
+                <!-- link栏 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/theme_bg">
+
+                    <include
+                        android:id="@+id/linkStatuses"
+                        layout="@layout/dongtai_link_statuseslink_publish"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/linkGoods"
+                        layout="@layout/dongtai_link_goods_publish"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/linkCard"
+                        layout="@layout/dongtai_link_card_publish"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/linkWish"
+                        layout="@layout/dongtai_link_wish"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <!-- 还是link栏 -->
+
+                <LinearLayout
+                    android:id="@+id/link_Lin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvLink"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_add"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/theme_red_bg"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnPulishLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_qiehuanchangwenzhang"
+            android:padding="20dp"
+            android:text="@string/switch_post_long_statuses"
+            android:textColor="@color/theme_black_a"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

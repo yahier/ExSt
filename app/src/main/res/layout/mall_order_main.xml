@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/top_banner" >
+
+        <!-- <ImageView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="订单" /> -->
+        
+         <TextView
+            android:id="@+id/top_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back" />
+
+        <TextView
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="@string/mall_order" />
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:id="@+id/orderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/linOrder1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/radio0"
+                style="@style/mall_order_radio"
+                android:drawableTop="@drawable/icon_quanbudingdan"
+                android:textColor="@color/theme_red"
+                android:text="@string/mall_all" />
+
+            <TextView
+                android:id="@+id/tab1"
+                style="@style/common_red_shape_small"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <!-- 2 -->
+
+        <FrameLayout
+            android:id="@+id/linOrder2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/radio1"
+                style="@style/mall_order_radio"
+                android:drawableTop="@drawable/icon_my_daifukuan"
+                android:text="@string/mall_wait_to_pay" />
+
+            <TextView
+                android:id="@+id/tab2"
+                style="@style/common_red_shape_small"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"                
+                android:visibility="invisible" />
+        </FrameLayout>
+        <!-- 3 -->
+
+        <FrameLayout
+            android:id="@+id/linOrder3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/radio2"
+                style="@style/mall_order_radio"
+                android:drawableTop="@drawable/icon_my_daifahuo"
+                android:text="@string/mall_wait_deliver_goods" />
+
+            <TextView
+                android:id="@+id/tab3"
+                style="@style/common_red_shape_small"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"                
+                android:visibility="invisible" />
+        </FrameLayout>
+        <!-- 4 -->
+
+        <FrameLayout
+            android:id="@+id/linOrder4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/radio3"
+                style="@style/mall_order_radio"
+                android:drawableTop="@drawable/icon_my_daishouhuo"
+                android:text="@string/mall_wait_take_deliver_goods" />
+
+            <TextView
+                android:id="@+id/tab4"
+                style="@style/common_red_shape_small"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"                
+                android:visibility="invisible" />
+        </FrameLayout>
+        <!-- 5 -->
+
+        <FrameLayout
+            android:id="@+id/linOrder5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/radio4"
+                style="@style/mall_order_radio"
+                android:drawableTop="@drawable/icon_daipingjia"
+                android:text="@string/mall_wait_to_remark" />
+
+            <TextView
+                android:id="@+id/tab5"
+                style="@style/common_red_shape_small"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"                
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 横线栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <View
+            android:id="@+id/line_scroll"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/theme_red" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

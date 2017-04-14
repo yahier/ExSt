@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+<View style="@style/Divider"/>
+    <RelativeLayout
+        android:id="@+id/layout_sign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/list_selector_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/earn_shitu_ticket_sign" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_go_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_sign"
+            android:layout_toRightOf="@id/iv_sign"
+            android:text="@string/me_go_sign"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_go_sign"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/iv_sign"
+            android:text="@string/me_go_sign_intro"
+            android:textColor="@color/f_gray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="64dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_status"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/list_selector_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/earn_shitu_ticket_status" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_send_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_status"
+            android:layout_toRightOf="@id/iv_status"
+            android:text="@string/me_send_status"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_send_status"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/iv_status"
+            android:text="@string/me_send_status_intro"
+            android:textColor="@color/f_gray"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="64dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_student"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/list_selector_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/iv_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/earn_shitu_ticket_accept_student" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_accept_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_student"
+            android:layout_toRightOf="@id/iv_student"
+            android:text="@string/me_go_accept_student"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accept_student"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/iv_student"
+            android:text="@string/me_go_accept_student_intro"
+            android:textColor="@color/f_gray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divider" />
+
+</LinearLayout>

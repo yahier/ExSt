@@ -1,0 +1,104 @@
+<!-- 只用作整个文件复制用 -->
+<!--已过期-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/im_invite_text"
+                android:ems="5"
+                android:text="邀请人:" />
+
+            <TextView
+                android:id="@+id/tvInviter"
+                style="@style/im_invite_text"
+                android:text="小小" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/im_invite_text"
+                android:ems="5"
+                android:text="讨论组名称:" />
+
+            <TextView
+                android:id="@+id/tvDiscussionName"
+                style="@style/im_invite_text"
+                android:text="神龙教" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/im_invite_text"
+                android:ems="5"
+                android:text="创建时间:" />
+
+            <TextView
+                android:id="@+id/tvCreatime"
+                style="@style/im_invite_text"
+                android:text="公元28年" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="界面设计上这里显示的是几个图像" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvReject"
+            style="@style/common_bnt_short_red"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_black"
+            android:padding="10dp"
+            android:text="冷酷拒绝"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvReceived"
+            style="@style/common_bnt_short_red"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="接受邀请"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_96px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_your_gold_bean_amount"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_L" />
+
+            <TextView
+                android:id="@+id/tv_bean_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_d_number"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/font_L" />
+
+        </LinearLayout>
+
+        <View style="@style/divider_1px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/me_please_choose_recharge_amount"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <com.stbl.stbl.widget.NestedGridView
+            android:id="@+id/gv_charge_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="@dimen/padding_left"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/padding_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/me_pay_mode"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_S" />
+
+        <com.stbl.stbl.widget.NestedGridView
+            android:id="@+id/gv_pay_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_top"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="@dimen/padding_left"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/padding_top" />
+
+        <Button
+            android:id="@+id/btn_confirm_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_80px"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_selector_red"
+            android:text="@string/me_confirm_recharge"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_L" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="@string/me_recharge_tip"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_S" />
+
+    </LinearLayout>
+</ScrollView>

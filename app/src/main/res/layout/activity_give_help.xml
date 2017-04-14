@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light">
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <Button
+            android:id="@+id/btn_receive_invite"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bangyibang_btnbg_general_red"
+            android:text="@string/me_receive_invite"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_L" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_find_people"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bangyibang_btnbg_general_red"
+            android:text="@string/me_i_want_to_find_people"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_L" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layout_bottom"
+        android:background="#dddddd" />
+
+    <include
+        layout="@layout/refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line" />
+
+    <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:emptyImage="@drawable/icon_kong"
+        />
+
+</RelativeLayout>

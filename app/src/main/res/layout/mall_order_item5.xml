@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_lv_item_click_style"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mall_order_id"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvOrderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_text1"
+            android:text="42149696885"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvStateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="交易成功"
+            android:textColor="#f55" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/llPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <View style="@style/line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/moneyLin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mall_total"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvMoneyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView12"
+                android:text="¥563.00"
+                android:textColor="@color/mall_goods_price"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_btn2"
+            style="@style/common_bnt_short_red"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minEms="4"
+            android:text="@string/mall_remark" />
+
+        <Button
+            android:id="@+id/order_btn1"
+            style="@style/common_bnt_short_gray"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/order_btn2"
+            android:background="@drawable/common_btn_gray_line"
+            android:text="@string/mall_return_apply"
+            android:textColor="@color/gray1" />
+    </RelativeLayout>
+
+</LinearLayout>

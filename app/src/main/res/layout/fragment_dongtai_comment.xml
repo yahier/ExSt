@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.stbl.stbl.widget.refresh.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_to_load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipe_style="classic">
+
+        <ListView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/bg_gray_mid"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent" />
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/footer_my_load_more" />
+
+    </com.stbl.stbl.widget.refresh.SwipeToLoadLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:emptyText="还没有评论，快来抢沙发吧" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_push_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:textColor="@color/gray1"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="" />
+
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioOwnerWidget
+        android:id="@+id/audio_owner_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_60" />
+
+    <TextView
+        android:id="@+id/owner_topic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_owner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="设置聊天话题"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <!-- 中间标点，标定左右两个 -->
+    <View
+        android:id="@+id/center_flag"
+        android:layout_width="@dimen/px_1"
+        android:layout_height="@dimen/px_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30" />
+
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioMemberWidget
+        android:id="@+id/audio_member_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_topic_tv"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_toLeftOf="@id/center_flag"
+        app:defaultMode="small" />
+
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioMemberWidget
+        android:id="@+id/audio_member_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_topic_tv"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_toRightOf="@id/center_flag"
+        app:defaultMode="small" />
+
+    <!-- 第二排中间 ,标点 -->
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioMemberWidget
+        android:id="@+id/audio_second_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_member_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        app:defaultMode="small"
+        app:guest="true" />
+
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioMemberWidget
+        android:id="@+id/audio_second_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_member_one"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toLeftOf="@id/audio_second_two"
+        app:defaultMode="small" />
+
+
+    <com.stbl.stbl.ui.DirectScreen.widget.AudioMemberWidget
+        android:id="@+id/audio_second_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_member_one"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toRightOf="@id/audio_second_two"
+        app:defaultMode="small" />
+
+
+</RelativeLayout>

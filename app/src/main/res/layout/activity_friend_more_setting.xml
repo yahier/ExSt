@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <View
+        style="@style/divider_1px"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_see_his"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/not_see_his_statuses"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/font_L" />
+
+        <CheckBox
+            android:id="@+id/cb_see_his"
+            android:layout_width="52dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_checkbox_friend_setting"
+            android:button="@null"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            style="@style/divider_1px"
+            android:layout_marginLeft="@dimen/padding_left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_see_my"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/statuses_not_seen_by_it"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/font_L" />
+
+        <CheckBox
+            android:id="@+id/cb_see_my"
+            android:layout_width="52dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_checkbox_friend_setting"
+            android:button="@null"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_1px"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/btn_unfollow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:background="@drawable/btn_selector_red"
+        android:paddingRight="@dimen/padding_left"
+        android:text="@string/unfollow"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_L" />
+
+    <Button
+        android:id="@+id/btn_delete_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:background="@drawable/btn_selector_red"
+        android:paddingRight="@dimen/padding_left"
+        android:text="@string/delete_friend"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_L" />
+
+</LinearLayout>

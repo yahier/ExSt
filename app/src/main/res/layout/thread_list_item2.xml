@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line_horizontal"
+        android:background="@color/gray3" />
+
+    <!-- 一直到四个数字操作栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.stbl.stbl.widget.RoundImageView
+            android:id="@+id/item_iv"
+            android:layout_width="@dimen/list_head_img_width_height"
+            android:layout_height="@dimen/list_head_img_width_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/test" />
+
+        <LinearLayout style="@style/dongtai_list_info_con">
+
+            <!-- 个人信息和右边图像 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 个人信息开始 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name"
+                            style="@style/dongtai_list_name"
+                            android:text="小baby" />
+
+                        <TextView
+                            android:id="@+id/relation"
+                            style="@style/dongtai_list_text_relation"
+                            android:layout_marginLeft="7dp"
+                            android:text="师傅" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/gender_age"
+                            style="@style/dongtai_list_gender_girl"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="22" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            style="@style/dongtai_list_time"
+                            android:layout_marginLeft="5dp"
+                            android:drawableLeft="@drawable/dongtai_time_icon"
+                            android:drawablePadding="2dp"
+                            android:text="40分钟之前" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 个人信息结束 -->
+
+                <ImageView
+                    android:id="@+id/dongtai_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/dongtai_item_more"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- 内容 图片 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_dongtai_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="内容是的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <GridView
+                    android:id="@+id/item_gv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/transparent"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="5dp" />
+
+                <!-- 四个动态数字显示栏 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvReply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme_brown"
+                        android:textSize="@dimen/font_size_remark" />
+                </LinearLayout>
+
+                <!-- 四个动态item结束 -->
+            </LinearLayout>
+            <!-- 个人信息结束 -->
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        style="@style/line_horizontal"
+        android:background="@color/gray3" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="@color/theme_bg" />
+
+</LinearLayout>

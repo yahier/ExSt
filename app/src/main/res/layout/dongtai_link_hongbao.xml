@@ -1,0 +1,86 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/statuses_link_lin"
+              android:layout_margin="0dp"
+              android:background="@drawable/dongtai_hongbao_big_bg"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/linHongbaoBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dongtai_hongbao_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dongtai_hongbao_left"/>
+
+            <ImageView
+                android:id="@+id/link9Img"
+                android:layout_width="@dimen/list_head_img_width_height"
+                android:layout_height="@dimen/list_head_img_width_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dongtai_hongbao_right"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvHongbaoBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvHongbaoContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#fcff00"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_dongtai_pick_hongbao_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="点击领取"
+            android:textColor="#8C2015"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

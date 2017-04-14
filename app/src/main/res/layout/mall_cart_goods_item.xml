@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_zone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_lv_item_click_style"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            style="@style/mall_checkbox"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:button="@null"
+            android:drawableRight="@drawable/mall_checkbox"
+            android:layout_marginTop="@dimen/dp_30"
+             />
+
+        <ImageView
+            android:id="@+id/imgGoods"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/checkBox1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/imgGoods"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tVgoodsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="字母印花圆领非主流酷炫套头卫衣"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.stbl.stbl.widget.AddAndSubView
+                    android:id="@+id/tvNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tVgoodsname"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvXinghao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tVgoodsname"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/tvNum"
+                    android:text="mm-蓝色"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGoods"
+            android:layout_marginTop="10dp"
+            android:text="¥256.00"
+            android:layout_toRightOf="@id/checkBox1"
+            android:textColor="@color/font_red"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal"/>
+
+</LinearLayout>

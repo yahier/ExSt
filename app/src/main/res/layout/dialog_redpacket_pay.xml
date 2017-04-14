@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@drawable/shape_white_corner4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="27dp"
+            android:paddingTop="17.5dp"
+            android:text="@string/dialog_title_pay"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:paddingBottom="12.5dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="12.5dp"
+            android:src="@drawable/dialog_close" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/me_stbl_redpacket"
+        android:textColor="@color/f_black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="30sp"
+        android:paddingTop="20dp"
+        android:text="¥ 200"
+        android:textColor="@color/f_black"
+        android:textSize="34sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebeae8" />
+
+    <LinearLayout
+        android:id="@+id/layout_pay_type"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+
+        <ImageView
+            android:id="@+id/iv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_wx_pay" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/me_weixin_pay"
+            android:textColor="@color/f_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redpacket_pay_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebeae8" />
+
+    <Button
+        android:id="@+id/btn_go_pay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_selector_send_redpacket"
+        android:text="@string/me_go_pay"
+        android:textColor="#f9f0f0"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+</LinearLayout>

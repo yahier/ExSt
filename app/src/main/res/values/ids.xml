@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_viewholder" type="id"/>
+    <item name="btn_cancel" type="id"/>
+    <item name="btn_ok" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    
+    <!-- Custom Ids Value -->
+    <item name="appParentId" type="id"/>
+    <item name="navigation_view" type="id"/>
+
+    <!-- Controls Ids Value-->
+    <item name="layout1" type="id"></item>
+    <item name="layout2" type="id"></item>
+    <item name="layout3" type="id"></item>
+    <item name="layout4" type="id"></item>
+    <item name="layout5" type="id"></item>
+    <item name="layout6" type="id"></item>
+    <item name="controls1" type="id"></item>
+    <item name="controls2" type="id"></item>
+    <item name="controls3" type="id"></item>
+    <item name="controls4" type="id"></item>
+    <item name="controls5" type="id"></item>
+    <item name="controls6" type="id"></item>
+    <item name="controls7" type="id"></item>
+    <item name="controls8" type="id"></item>
+    <item name="controls9" type="id"></item>
+
+    <item type="id" name="gridview" />
+
+    <item name="swipe_target" type="id" />
+    <item name="swipe_refresh_header" type="id" />
+    <item name="swipe_load_more_footer" type="id" />
+    <item name="statuses_delete" type="id" />
+
+    <item type="id" name="glide_tag" />
+
+</resources>

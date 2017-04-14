@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_surface"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dongtai_default" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_red_stroke"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/f_red"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_toLeftOf="@id/tv_add"
+        android:layout_toRightOf="@id/iv_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/font_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:textColor="@color/font_red"
+        android:textSize="@dimen/font_M" />
+
+</RelativeLayout>

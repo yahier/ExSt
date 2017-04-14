@@ -1,0 +1,143 @@
+<!-- 只用作整个文件复制用 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/theme_top_banner"
+            style="@style/top_banner">
+
+            <ImageView
+                android:id="@+id/theme_top_banner_left"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:scaleType="center"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/theme_top_banner_middle"
+                style="@style/top_banner_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvMore"
+                style="@style/top_banner_middle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="@string/more" />
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/tvMore"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/share" />
+
+        </RelativeLayout>
+
+        <com.stbl.stbl.widget.refresh.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swipe_to_load_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:swipe_style="classic">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white"
+                android:clipToPadding="false"
+                android:paddingBottom="12dp" />
+
+            <!--<include-->
+                <!--android:id="@id/swipe_load_more_footer"-->
+                <!--layout="@layout/footer_my_load_more" />-->
+                <TextView
+                    android:id="@id/swipe_load_more_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/white"/>
+        </com.stbl.stbl.widget.refresh.SwipeToLoadLayout>
+
+        <LinearLayout
+            android:id="@+id/linBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_yellow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnSendGift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_card_gift"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/give_gift"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <!--加好友  或者 发消息-->
+            <TextView
+                android:id="@+id/btnFriend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_card_message"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:text="@string/send_message" />
+
+            <TextView
+                android:id="@+id/btnFollow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_attention_follow_each_other"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="image"
+        android:visibility="invisible" />
+</FrameLayout>

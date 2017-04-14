@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_more">No more</string>
+
+    <string name="no_money_detail">No detail data</string>
+
+    <string name="no_login_tips">You don\'t Login, login now~</string>
+
+    <string name="payment_details">Income and expenditure details</string>
+
+    <string name="my_debit_card">My bank card</string>
+
+    <string name="have_withdrawal">withdrawn</string>
+
+    <string name="the_settlement">Clearing</string>
+
+    <string name="can_withdrawal">You can withdraw：</string>
+
+    <string name="complete_deal">Trades have been done</string>
+
+    <string name="withdrawal_to">Withdraw to：</string>
+
+    <string name="withdrawal_confirm">Withdraw confirm</string>
+
+    <string name="gold_text">Amount</string>
+
+    <string name="withdrawal_min">No less than % Yuan</string>
+
+    <string name="today_withdrawal_money">The maximum withdraw amount: % Yuan</string>
+
+    <string name="bind_bankcard_tips">Please ensure name, bank card, and account holder is the same person</string>
+
+    <string name="card_owner">Account holder</string>
+
+    <string name="card_owner_name">Please enter account holder name</string>
+
+    <string name="identity_card">ID card</string>
+
+    <string name="identity_card_no">Please enter account holder ID</string>
+
+    <string name="deposit_bank">Opening bank</string>
+
+    <string name="deposit_bank_choose">Please choose opening bank</string>
+
+    <string name="bankcard_num">Card numbers</string>
+
+    <string name="bankcard_num_input">Please enter card numbers</string>
+
+    <string name="bankcard_num_input_continue">Please retype card numbers</string>
+
+    <string name="bind_bankcard_notice">Only all information is true and legally liable, you can withdraw.\Support deposit card only, please don\’t enter credit card</string>
+
+    <string name="bind_bankcard_confirm">Bind card number</string>
+
+    <string name="replace_bind_bankcard">Change card</string>
+
+    <string name="not_settlement_log">No clearing data</string>
+
+    <string name="not_have_withdrawal_log">No withdraw data</string>
+
+    <string name="not_date">No data</string>
+
+    <string name="not_income_detail">No income and expenditure data</string>
+
+    <string name="order_detail">Order detail</string>
+
+    <string name="piao">Points</string>
+
+    <string name="goods_snapshot">Product snapshot</string>
+
+    <string name="copy_order_info_err">Non-exception order numbers, copy failed</string>
+
+    <string name="copy_success">Copy success</string>
+
+    <string name="goods_remark">Note:</string>
+
+    <string name="goods_money">Product amount </string>
+
+    <string name="goods_info">Product information</string>
+
+    <string name="consignee_info">Consignee information:</string>
+
+    <string name="order_create_time">Time of place order</string>
+
+    <string name="order_no">Order number</string>
+
+    <string name="buyer_1">Buyer</string>
+
+    <string name="exchange_success">Exchange success</string>
+
+    <string name="order_id">Order number </string>
+
+    <string name="create_time">Time of place order </string>
+
+    <string name="exchange_time">Time of exchange </string>
+
+    <string name="shitupiao_detail">Point detail</string>
+
+    <string name="no_goods">No product found</string>
+
+    <string name="shitupiao_exchange">Exchange point</string>
+
+    <string name="confirm_exchange">Exchange confirm</string>
+
+    <string name="contact_service">Contact Customer Service</string>
+
+    <string name="remain_count">Remaining:%d</string>
+
+    <string name="exchange_count">Exchanged %d</string>
+
+    <string name="express_cost">Express:%s</string>
+
+    <string name="immediately_exchange">Exchange now</string>
+
+    <string name="no_integral">Your balance is not enough</string>
+
+    <string name="goods_introduce">Product introduction</string>
+
+    <string name="total">Total</string>
+
+    <string name="service">Customer service</string>
+
+    <string name="integral_exchange_history">Exchange record</string>
+
+    <string name="help_notes">Help text</string>
+
+    <string name="all">All</string>
+
+    <string name="integral_unit">Point</string>
+
+    <string name="integral_exchage_mall">Exchange mall</string>
+
+    <string name="integral_exchage_filter">Screening</string>
+
+    <string name="exchange_gift">Exchange for gift</string>
+
+    <string name="integral_help">Help text</string>
+
+    <string name="integral_history">Exchange record</string>
+
+    <string name="good_detail">Product detail</string>
+
+    <string name="correlation_goods">Related products</string>
+
+    <string name="coupon">Coupon</string>
+
+    <string name="coupon_tips">No Coupon</string>
+
+    <string name="give_seller_msg">Leave a message to seller</string>
+
+    <string name="goods_photo">Product photo</string>
+
+    <string name="goods_photo_tips">Click to edit after adding photo </string>
+
+    <string name="delete">Delete</string>
+
+    <string name="photo_edit">Edit photo</string>
+
+    <string name="photo_desc">Photo description</string>
+
+    <string name="photo_desc_edit_hint">Enter photo description, it will be shown below photo detail </string>
+
+    <string name="app_name">SHIFU</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="record_voice_tip">One-sentence summary of who you are, can increase success rate 80%</string>
+    <string name="age1">Ming Wang is %d years old</string>
+    <string name="orderHumanPhone">4008633361</string>
+    <string name="hotline">400-8633-361</string>
+
+    <string name="waiting">Please wait</string>
+
+    <string name="no_goods_date">No product data</string>
+
+    <string name="only_choose_num">Beyond optional amount of photos</string>
+
+    <string name="finish">Done</string>
+
+    <string name="invalidSD">Invalid or no inserted</string>
+
+    <string name="photo">Choose album</string>
+
+    <string name="album">Album</string>
+
+    <string name="preview">Preview</string>
+
+    <string name="unfinished">Done</string>
+
+    <string name="camera_cancel">Cancel</string>
+
+    <string name="no_photo">No photo</string>
+
+    <string name="no_dynamic_newmsg">No news</string>
+
+    <string name="xlistview_header_last_time">Last update time</string>
+
+    <string name="xlistview_footer_hint_normal"/>
+
+    <string name="xlistview_footer_hint_ready"/>
+
+    <string name="xlistview_footer_hint_nothing"/>
+
+    <string name="xlistview_footer_hint_load">Loading…</string>
+
+    <string name="xlistview_footer_hint_End"/>
+
+    <string name="loading">Loading</string>
+
+    <item name="tag_dongtai_item" type="id"/>
+
+    <string name="pay_by_wx_title">Wechat pay</string>
+
+    <string name="pay_result_tip">This page is used to display third-party APP by the result of Wechat pay</string>
+
+    <string name="unifiedorder_v3_wx">APP payment generate advance payment order</string>
+
+    <string name="pay__pre_by_wxap">Generate APP Wechat pay parameter</string>
+
+    <string name="pay_by_wxap">Choose Wechat pay</string>
+
+    <string name="app_tip">Hint</string>
+    <string name="pay_result_callback_msg" formatted="false">he result of Wechat pay:%</string>
+
+    <string name="getting_prepayid">Obtaining advance payment order</string>
+    <string name="red_packet">Lucky money</string>
+
+    <string name="cast_bean">Drop coins</string>
+
+    <string name="msg_camera_framework_bug">Sorry, Android camera problems occur, you may need reboot.</string>
+
+    <string name="button_ok">Confirm</string>
+
+    <string name="im_default_redpacket_message">Wishing you prosperity</string>
+
+    <string name="click_set_owner">Click to establish topic</string>
+
+    <string name="apply_friend">Friend request</string>
+
+    <string name="send_gift">Give gift</string>
+
+    <string name="no_wheat">No talking</string>
+
+    <string name="shot_off">Kick out </string>
+
+    <string name="topic_set">Establish topic</string>
+
+    <string name="hint_input_topic">Please enter Live topic</string>
+
+    <string name="enter">Confirm</string>
+
+    <string name="temp_account_ok">Login</string>
+
+    <string name="temp_account_cancel">Cancel</string>
+
+    <string name="temp_account_msg">Login and use this function</string>
+
+    <string name="title_open_new_direct_screen">Live</string>
+
+    <string name="dialog_title_in_room">%1$s\'s Live Room</string>
+
+    <string name="open_direct_screen">Live</string>
+
+    <string name="enter_start">Confirm start</string>
+
+    <string name="report">Report</string>
+    <string name="room_password">Room password：</string>
+    <string name="msg_handling">Dealing…</string>
+    <string name="msg_loading_new_gift">The latest gift list is loading\Please wait…</string>
+
+    <string name="msg_input_screen_topic">Please enter Live topic</string>
+
+    <string name="msg_publish_dynamic_everybody">Send a status inform everyone</string>
+
+    <string name="msg_screen_dynamic_content">Hello everyone! I open a Live room, and come to have good conversations with me. </string>
+
+    <string name="msg_encrypt_password_tips"> Encrypt password is 6 numbers</string>
+
+    <string name="notify_network_error">Network error, please check the network</string>
+    <string name="notify_no_network">Network error, please check the network</string>
+    <string name="not_default_appid">Information error, please contact background</string>
+    <string name="direct_scree_backgrounp">Live is running</string>
+    <string name="close_publish_help_tip">No longer receive recommend after closing\System will refund all rewards to you \Are you sure you want to close? </string>
+    <string name="close_publish_help_tip_1hour">No longer receive recommend after closing\You will be deducted half rewards by system\Are you sure you want to close?</string>
+    <string name="delete_publish_help_tip">Recommend that you received will be deleted\ Are you sure you want to delelet?</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_twice_to_exit">Click twice to exit</string>
+
+    <string name="modify_info"><u>modify</u>
+    </string>
+
+    <string name="rank_people_hub">Connection</string>
+    <string name="rank_active">Active</string>
+    <string name="rank_earnings">Earnings</string>
+    <string name="rank_active_index">Active index</string>
+    <string name="rank_di">NO. %d</string>
+    <string name="rank_earnings_index">Profitability index</string>
+    <string name="rank_tuhao_index">Wealth index</string>
+    <string name="rank_people_hub_index">Connection index</string>
+    <string name="rank_people">人</string>
+    <string name="rank_no_rank">No rank</string>
+    <string name="common_photo_album">Album</string>
+    <string name="common_more_can_choise">Maximum selectable</string>
+    <string name="common_zhang">Piece</string>
+    <string name="common_version_know">" V Version number unknown"</string>
+    <string name="common_current_time">Just now</string>
+    <string name="common_minute_before">%d minutes ago</string>
+    <string name="common_hour_before">%d hours ago</string>
+    <string name="common_day_before">%d days ago</string>
+    <string name="common_month_day_hhmm">M month day  HH:mm</string>
+    <string name="common_photo_save_to_stbl">Photo already stored in carte SD stbl document</string>
+    <string name="common_network_not_available">Network error</string>
+    <string name="common_operate_err">Operation failure</string>
+    <string name="common_connection_timeout">Connection timeout</string>
+    <string name="common_service_busyness">Server is busy, please try again later</string>
+    <string name="common_connection_err">Connection error</string>
+    <string name="common_response_timeout">Request Timed Out</string>
+    <string name="common_dispose">In progres…</string>
+    <string name="common_copy_success">Copy to clipboard</string>
+    <string name="common_version_upate">Shifu new version update</string>
+    <string name="common_download_err">Download failed</string>
+    <string name="common_download_err_reset">Download failed, click to retry</string>
+    <string name="common_download_start">Download start</string>
+    <string name="common_downloading">Downloading：</string>
+    <string name="common_choise_photo">Select photo</string>
+    <string name="common_check_look">View</string>
+    <string name="common_save_to_phone">Save to phone</string>
+    <string name="common_decode_qr">QR code recognition</string>
+
+    <string name="common_save">Save</string>
+    <string name="common_open_red_package">Open</string>
+    <string name="common_save_error">save failed</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="common_photo_save_to">Save photo to</string>
+    <string name="common_netword_not_available_tips">Network is not available, please set up network</string>
+    <string name="common_error">Error</string>
+    <string name="common_greather_than_zero_num">Please enter a number greater than 0</string>
+    <string name="common_num_can_not_lessthan">Amount is not less than </string>
+    <string name="common_num_can_not_greatherthan">Amount is not more than</string>
+    <string name="common_verification_infomation">Verification information</string>
+    <string name="common_introduce_you_self">Introduce yourself (Required)</string>
+    <string name="common_add_friend_to_user"><![CDATA[Add<font color=\'#DEA524\'>%s</font>as friend]]></string>
+    <string name="ad_order_detail">订单详情</string>
+    <string name="rp_send_count">发出红包&#160;%s&#160;个</string>
+    <string name="rp_receive_title">收到的红包</string>
+    <string name="rp_sended_title">发出的红包</string>
+    <string name="rp_random">拼手气红包</string>
+    <string name="rp_common">普通红包</string>
+    <string name="rp_done">已领完</string>
+    <string name="rp_timeout">已过期</string>
+    <string name="rp_ge">个</string>
+    <string name="rp_yuan">元</string>
+    <string name="rp_me_receive">我收到的</string>
+    <string name="rp_me_send">我发出的</string>
+
+</resources>

@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corner3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_96px"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:text="我推荐的人："
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_L" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_96px"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/padding_left"
+        android:textColor="@color/font_gray_light"
+        android:textSize="@dimen/font_M" />
+
+    <View
+        android:id="@+id/line1"
+        style="@style/divider_1px"
+        android:layout_below="@id/tv_time" />
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/line1"
+        android:layout_marginBottom="@dimen/padding_top"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_head" />
+
+    <View
+        android:id="@+id/line_middle"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/iv_head" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_middle"
+        android:layout_toRightOf="@id/iv_head"
+        android:background="@drawable/shape_red_corner32"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:textColor="@color/font_white"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_middle"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_age"
+        android:drawableLeft="@drawable/icon_my_position"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_age"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_L" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_head"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="24dp"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_L" />
+
+    <View
+        android:id="@+id/line2"
+        style="@style/divider_1px"
+        android:layout_below="@id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line2"
+        android:paddingBottom="@dimen/padding_top"
+        android:paddingRight="@dimen/padding_left"
+        android:paddingTop="@dimen/padding_top"
+        android:text="等待对方采纳"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_L"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/tv_state"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_red"
+        android:text="关闭"
+        android:textColor="@color/font_white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/btn_close" />
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@id/line2"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginRight="@dimen/padding_left"
+        android:src="@drawable/ic_adopted_tag"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<!-- 动态之排行榜 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <!-- 排行榜分类 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/dongtai_rank_item1"
+            style="@style/dongtai_rank_item"
+            android:padding="5dp"
+            android:text="活跃度" />
+
+        <TextView
+            android:id="@+id/dongtai_rank_item2"
+            style="@style/dongtai_rank_item"
+            android:text="财富" />
+
+        <TextView
+            android:id="@+id/dongtai_rank_item3"
+            style="@style/dongtai_rank_item"
+            android:text="土豪" />
+
+        <TextView
+            android:id="@+id/dongtai_rank_item4"
+            style="@style/dongtai_rank_item"
+            android:text="人脉" />
+
+        <TextView
+            android:id="@+id/dongtai_rank_item5"
+            style="@style/dongtai_rank_item"
+            android:text="帮群" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+    <ListView
+        android:id="@+id/dongtai_rank_list"
+        style="@style/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

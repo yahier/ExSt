@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:layout_marginTop="20dp"
+	    android:orientation="vertical"
+	    >
+		<View style="@style/line_horizontal"/>
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:gravity="center_vertical"
+			android:paddingTop="15dp"
+	        android:paddingBottom="15dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        >
+	        <TextView
+	            android:id="@+id/textView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="快递公司"
+	            android:textSize="18sp"
+	            android:textColor="@color/black" />
+
+	        <EditText
+	            android:id="@+id/editText6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/imageview1"
+	            android:layout_toRightOf="@+id/textView5"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:padding="5dp"
+	            android:background="@color/transparent"
+	            android:ems="10" />
+
+	        <ImageView
+	 		    android:id="@+id/imageview1"
+		        android:layout_width="40dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/test_right" />
+	    </RelativeLayout>
+	    <View style="@style/line_horizontal"/>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:paddingTop="15dp"
+			android:paddingBottom="15dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			>
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:text="快递单号"
+				android:textSize="18sp"
+				android:textColor="@color/black" />
+
+			<EditText
+				android:id="@+id/editText1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/textView2"
+				android:layout_toRightOf="@+id/textView1"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="0dp"
+				android:padding="5dp"
+				android:inputType="number"
+				android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+				android:background="@color/transparent"
+				android:ems="10" />
+
+			<TextView
+				android:id="@+id/textView2"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:textSize="16sp"
+				android:text="0/90" />
+		</RelativeLayout>
+		<View style="@style/line_horizontal"/>
+	    
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/button1"
+	    style="@style/common_bnt_short_red"
+	    android:layout_width="200dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="50dp"
+	    android:layout_gravity="center_horizontal"
+	    android:text="提 交" />
+
+</LinearLayout>

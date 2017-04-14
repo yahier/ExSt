@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/link_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_96px"
+            android:background="@drawable/selector_white_top_corner_btn"
+            android:text="@string/business_card"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <View style="@style/divider_1px" />
+
+        <Button
+            android:id="@+id/link_wish"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_white_bottom_corner_btn"
+            android:text="@string/wish"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/link_collect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_96px"
+            android:background="@drawable/selector_white_bottom_corner_btn"
+            android:text="@string/collection"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/item_popupwindows_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_96px"
+        android:layout_marginBottom="@dimen/padding_top"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@drawable/btn_selector_yellow"
+        android:text="@string/cancel"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_L" />
+
+</LinearLayout>

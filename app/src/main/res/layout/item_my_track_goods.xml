@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/bg_white"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingRight="@dimen/padding_left">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dongtai_default" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/dongtai_time_icon"
+        android:drawablePadding="1dp"
+        android:gravity="center_vertical"
+        android:text="2016-04-12"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="200"
+        android:textColor="@color/font_red"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:id="@+id/tv_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:text="销量：2000"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_M" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_price"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_toLeftOf="@id/tv_time"
+        android:layout_toRightOf="@id/iv_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="可爱卡通针织衫，纯手工制作"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_L" />
+
+</RelativeLayout>

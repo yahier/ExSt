@@ -1,0 +1,142 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/register_lin"
+    android:gravity="center_horizontal"
+    android:paddingTop="0dp">
+
+    <View
+        style="@style/Divider"
+        android:layout_marginBottom="@dimen/dp_27" />
+
+    <!--  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_image_verify_code"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/input_imgverify"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入右侧的验证码"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_imgverify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/me_please_input_verify_code"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/font_L"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_imgverify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="@drawable/def" />
+    </LinearLayout>
+
+    <View style="@style/register_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <EditText
+            android:id="@+id/inputCode"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入手机验证码"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvReSendOrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/obtain_sms_verify_code"
+            android:textColor="@color/theme_red_deep"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <View style="@style/register_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <EditText
+            android:id="@+id/inputPwd"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/please_input_6_20_length_pwd"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imgPwdVisibility"
+            style="@style/register_input_delete" />
+
+    </LinearLayout>
+
+    <View style="@style/register_divider_line" />
+
+    <TextView
+        android:id="@+id/btnOk"
+        style="@style/register_long_btn"
+        android:text="@string/register_" />
+
+    <TextView
+        android:id="@+id/tvUserProtocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

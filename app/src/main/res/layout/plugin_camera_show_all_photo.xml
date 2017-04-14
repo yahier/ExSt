@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/showallphoto_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white">
+
+        <View style="@style/Divider" />
+
+        <Button
+            android:id="@+id/showallphoto_ok_button"
+            style="@style/common_bnt_short_red"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:minWidth="70dp"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/showallphoto_myGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/showallphoto_bottom_layout"
+        android:clipToPadding="false"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:padding="1dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</RelativeLayout>

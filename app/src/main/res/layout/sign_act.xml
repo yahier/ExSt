@@ -1,0 +1,190 @@
+<!-- 只用作整个文件复制用 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_bg"
+            android:scrollbars="none"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/qiandao_top_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/linLongBack"
+                style="@style/top_banner"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    style="@style/top_banner_left"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back"/>
+
+                <TextView
+                    android:id="@+id/tvLongTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/imgQ"
+                    style="@style/top_banner_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sign_q_icon"/>
+
+
+            </RelativeLayout>
+
+            <!---以下全部还有190dp-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-25dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/linText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_android_qiandao_waiyuan"/>
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_android_qiandao_neiyuan"/>
+
+                        <TextView
+                            android:id="@+id/tvSign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:textColor="#ff6c6c"
+                            android:textSize="17dp"/>
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/linImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/linImgBg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_qiandao_dabaoxiang_light_bg"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:id="@+id/imgSign"
+                        android:layout_width="86dp"
+                        android:layout_height="77dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_qiandao_baoxiang_today"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSignDayTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/tvSignAwardTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+            android:background="@color/white"-->
+        <LinearLayout
+            android:id="@+id/linSign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvYM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="14dp"
+                android:textColor="#2d2d2d"
+                android:textSize="14dp"/>
+
+            <include layout="@layout/sign_gird_title"/>
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="29dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="7"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

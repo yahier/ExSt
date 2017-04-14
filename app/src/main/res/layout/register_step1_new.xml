@@ -1,0 +1,160 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/register_lin"
+    android:gravity="center_horizontal"
+    android:padding="0dp">
+    <View style="@style/Divider"
+        android:layout_marginBottom="@dimen/dp_27"/>
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/imgUser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/icon_register_head_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30">
+
+        <EditText
+            android:id="@+id/inputNick"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/nickname" />
+
+        <ImageView
+            android:id="@+id/imgDeleteNick"
+            style="@style/register_input_delete" />
+
+
+    </LinearLayout>
+
+    <View style="@style/register_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/linZone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tvZone"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/country_region" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_right" />
+
+    </LinearLayout>
+
+    <View style="@style/register_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_80px"
+        android:background="@drawable/list_selector_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30">
+
+        <EditText
+            android:id="@+id/inputPhone"
+            style="@style/register_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/phone_number"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imgDeletePhone"
+            style="@style/register_input_delete" />
+
+    </LinearLayout>
+
+    <View style="@style/register_divider_line" />
+
+    <TextView
+        android:id="@+id/btnOk"
+        style="@style/register_long_btn"
+        android:text="@string/next_step"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"/>
+
+
+    <TextView
+        android:id="@+id/tvUserProtocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp" />
+
+    <!--其它登录-->
+    <LinearLayout
+        android:id="@+id/linLogin3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/viewPlaceHolder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/register_divider_line"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/other_login_type"
+                android:textColor="#969696"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/register_divider_line"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgLoginWechat"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_weixin_login" />
+
+    </LinearLayout>
+</LinearLayout>

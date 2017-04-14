@@ -1,0 +1,129 @@
+<!-- 只用作整个文件复制用 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_ad_title" />
+
+            <ImageView
+                android:id="@+id/top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_15"
+                android:src="@drawable/back_white" />
+
+            <ImageView
+                android:id="@+id/top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_15"
+                android:src="@drawable/share_white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_open_ad_qualify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_close"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/btn_selector_dialog_positive"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/ad_open_service"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_my_rebate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_my_rebate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ad_my_rebate" />
+
+                <ImageView
+                    android:id="@+id/iv_have_rebate"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"
+                    android:layout_alignTop="@+id/tv_my_rebate"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="-3dp"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/tv_my_rebate"
+                    android:src="@drawable/icon_wuliu_hongdian" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/px_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@color/gray_a5" />
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/ad_description" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_12"
+            android:background="@color/theme_bg" />
+
+        <com.stbl.stbl.widget.StblWebView
+            android:id="@+id/wv_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_attention">关注</string>
+    <string name="label_square">广场</string>
+    <string name="no_dynamic_date">暂无动态数据,点击重试</string>
+    <string name="follow_success">关注成功</string>
+    <string name="unfollow_success">取消关注成功</string>
+    <string name="shield_success">屏蔽成功</string>
+    <string name="unshield_success">取消屏蔽成功</string>
+    <string name="remark_success">评论成功</string>
+    <string name="follow">关注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="topic">话题</string>
+    <string name="start_live">开启了直播</string>
+    <string name="please_input_first">请先输入</string>
+    <string name="please_wait">请稍候</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="room_data_error">房间数据错误</string>
+    <string name="ensure_enter">确认进入</string>
+    <string name="see_his_statuses">看Ta的动态</string>
+    <string name="not_see_his_statuses">不看Ta的动态</string>
+    <string name="please_input_key_word">请输入关键字</string>
+    <string name="clear_search_history">清空搜索记录</string>
+    <string name="no_related_data_search_again">未找到相关内容\n换个关键词试试</string>
+    <string name="input_keyword_to_search">输入关键字进行搜索</string>
+    <string name="repost_statuses">转发动态</string>
+    <string name="post">发布</string>
+    <string name="write_short_statuses">写短动态</string>
+    <string name="write_something">写点什么...</string>
+    <string name="add_photo">添加图片</string>
+    <string name="switch_post_long_statuses">切换长动态发布</string>
+    <string name="queding">确定</string>
+    <string name="is_giveup_editing">是否放弃本次编辑?</string>
+    <string name="tip">提示</string>
+    <string name="service_hotline">客服热线</string>
+    <string name="is_dial_service_phone">确定拨打客服电话，寻求人工帮助吗？</string>
+    <string name="choose_from_album">从相册选择</string>
+    <string name="ablum">相册</string>
+    <string name="take_photo">拍照</string>
+    <string name="please_input_title">请输入标题</string>
+    <string name="post_success">发布成功</string>
+    <string name="title_is_too_long">标题长度超过限制</string>
+    <string name="please_upload_one_picture_atleast">请至少上传一张图片</string>
+    <string name="please_add_cover_img">请添加封面图</string>
+    <string name="content_exceed_10000_please_modify">内容长度超过上限10000字，请修改</string>
+    <string name="uploading_cover_img">正在上传封面图</string>
+    <string name="already_add_15_img">已经添加够15张图片了</string>
+    <string name="statuses_detail">动态详情</string>
+    <string name="award">打赏</string>
+    <string name="comment">评论</string>
+    <string name="praised">赞</string>
+    <string name="repost">转发</string>
+    <string name="is_delete_this_statuses">是否删除此动态</string>
+    <string name="delete_success">删除成功</string>
+    <string name="failed_to_load_cover_img">封面图片加载失败</string>
+    <string name="failed_load_img">图片加载失败</string>
+    <string name="failed_to_parse_long_statuses">长微博解析错误</string>
+    <string name="can_not_award_self">不可以给自己打赏</string>
+    <string name="award_success">打赏成功</string>
+    <string name="jubao">举报</string>
+    <!--新补充-->
+    <string name="remind">提醒</string>
+    <string name="look_previous_message">查看更早的消息</string>
+    <string name="no_more_message">没有更多消息了</string>
+    <string name="no_message_yet">还没有消息!</string>
+    <string name="reply_">回复:</string>
+    <string name="reply">回复</string>
+    <string name="choose_picture">选取图片</string>
+
+    <!--新加-->
+    <string name="business_card">名片</string>
+    <string name="delete_comment_success">删除评论成功</string>
+    <string name="statuses_top">置顶动态</string>
+    <string name="statuses_hot">热门动态</string>
+    <string name="statuses_remark_load_more">查看更多</string>
+    <string name="statuses_content_exceed_length">内容过长，最多%s个文字</string>
+    <string name="statuses_by_someone">的动态</string>
+    <string name="save_to_phone">保存到手机</string>
+    <string name="confirm_delete_friend">是否删除好友</string>
+    <string name="confirm_unfollow">是否取消关注</string>
+    <string name="delete_friend">删除好友</string>
+    <string name="statuses_not_seen_by_it">不让Ta看我的动态</string>
+    <string name="sending_d_img">"正在上传第%s张图"</string>
+    <string name="add_cover_img">添加封面</string>
+    <string name="input_title_here">请此输入标题</string>
+    <string name="switch_to_short_statuses">切换短动态发布</string>
+    <string name="collection">收藏</string>
+    <string name="wish">愿望</string>
+    <string name="people_award">人打赏</string>
+    <string name="user_protical_tip"><Data><![CDATA[<font color="#999999">注册即表示同意</font><font color="#e7be09">《用户协议》</font>]]></Data></string>
+    <!--新加-->
+    <string name="award_list">打赏列表</string>
+    <string name="pull_down_to_retry">下拉重试</string>
+    <string name="rmb">人民币</string>
+    <string name="gold_bean">金豆</string>
+    <string name="green_bean">绿豆</string>
+    <string name="add_card">加入名片</string>
+    <string name="add">添加</string>
+    <string name="s_card">的名片</string>
+    <string name="signature">签名</string>
+    <string name="shopping_circle">商圈</string>
+    <!--广告位开始-->
+    <string name="commit">提交</string>
+    <string name="shoppingCircle">商圈</string>
+    <string name="shoppingRp">红包</string>
+    <string name="people_get_luckyMoney">人抢到红包</string>
+    <string name="plus_follow">+ 关注</string>
+    <string name="status_pick_luckypacket_info"><![CDATA[<font color=\'#ff6c6c\'>%1$s</font>人抢到了红包]]></string>
+    <string name="status_pick_luckypacket_info2"><![CDATA[<font color=\'#ff6c6c\'>%1$s</font>人抢到了红包，我抢到了<font color=\'#ff6c6c\'>%2$s</font>元]]></string>
+    <string name="ad_business_apply_left_times"><![CDATA[您今天还有<font color=\'#ff6c6c\'>%1$s</font>次申请机会]]></string>
+    <string name="ad_uploadimg_tip"><![CDATA[<font color="#ff6c6c">*</font>请上传640*306分辨率，jpg/png格式的广告图。]]></string>
+    <string name="statuses_pulish_faild">发布失败</string>
+    <string name="statuses_reset_pulish">重新发布</string>
+    <string name="statuses_replying">回复中</string>
+    <string name="statuses_reply_faild">回复失败</string>
+    <string name="statuses_reply_success">回复成功</string>
+</resources>

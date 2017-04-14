@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff">
+
+        <View
+            android:id="@+id/line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line_middle"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginLeft="12dp"
+            android:text="支付宝充值"
+            android:textColor="@color/f_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_middle"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="02-01 10:00"
+            android:textColor="@color/f_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="-2000.00"
+            android:textColor="@color/f_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/tv_no_more"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:text="@string/me_no_more_record"
+        android:textColor="@color/f_gray"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_report"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="@string/input_jubao_content_here"
+                android:minLines="6"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/tvLeftCount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:text="0/140"
+                android:textColor="@color/theme_black_a"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"></LinearLayout>-->
+
+    <Button
+        android:id="@+id/ok_report"
+        style="@style/common_red_button"
+        android:text="@string/commit" />
+
+
+</LinearLayout>

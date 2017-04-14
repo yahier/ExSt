@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/theme_top_banner"
+        style="@style/top_banner"
+        android:background="@color/theme_red_ff6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12"
+            android:text="@string/me_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_top_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:scaleType="center"
+            android:src="@drawable/back_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_title_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_left_white"
+                android:gravity="center"
+                android:text="@string/rp_me_receive"
+                android:textColor="@color/theme_red_ff6"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_title_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_right_alpha"
+                android:gravity="center"
+                android:text="@string/rp_me_send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_redpacket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

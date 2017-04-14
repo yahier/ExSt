@@ -1,0 +1,80 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/theme_top_banner"
+        style="@style/top_banner" >
+
+        <TextView
+            android:id="@+id/theme_top_banner_left"
+            style="@style/top_banner_left"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back" />
+
+        <TextView
+            android:id="@+id/theme_top_banner_middle"
+            style="@style/top_banner_middle"
+            android:layout_centerInParent="true"
+            android:text="手机通讯录" />
+
+        <TextView
+            android:id="@+id/theme_top_banner_right"
+            style="@style/top_baner_right_black_bg"
+            android:text="同步手机" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/theme_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 已经注册的 -->
+
+            <TextView
+                android:id="@+id/tvLabelRegistered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_bg"
+                android:padding="10dp"
+                android:text="已注册"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/listRegister"
+                style="@style/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 没有注册的 -->
+
+            <TextView
+                android:id="@+id/tvLabelUnregistered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/theme_bg"
+                android:padding="10dp"
+                android:text="未注册"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/listUnRegister"
+                style="@style/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

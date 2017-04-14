@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_96px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/selector_white_btn"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:text="开启师徒之旅"
+        android:textColor="@color/font_black_light"
+        android:textSize="@dimen/font_L" />
+
+</RelativeLayout>

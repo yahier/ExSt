@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/order_lv_item_click_style"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_8"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_8">
+
+    <ImageView
+        android:id="@+id/imgGoods"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plugin_camera_no_pictures" />
+
+
+    <TextView
+        android:id="@+id/tv_goodsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/imgGoods"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/tv_price"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tv_xinghao"
+        android:maxLines="2"
+        android:text="字母印花圆领非主流酷炫套头卫衣"
+        android:textColor="@color/gray_333"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="269.00"
+        android:textColor="@color/gray_333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_xinghao"
+        android:text="x99"
+        android:textColor="@color/gray_a5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_xinghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_num"
+        android:layout_toRightOf="@+id/imgGoods"
+        android:layout_alignBottom="@+id/imgGoods"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="mm-蓝色"
+        android:textColor="@color/gray_a5"
+        android:textSize="12sp" />
+
+</RelativeLayout>

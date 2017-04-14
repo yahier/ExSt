@@ -1,0 +1,14 @@
+<!--圆图像显示，小图像-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stbl.stbl.widget.RoundImageView
+        android:id="@+id/item_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def_head" />
+
+</LinearLayout>

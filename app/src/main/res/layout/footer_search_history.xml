@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_96px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="清空历史记录"
+        android:textColor="@color/font_red"
+        android:textSize="@dimen/font_L" />
+
+</RelativeLayout>

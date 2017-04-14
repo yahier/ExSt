@@ -1,0 +1,82 @@
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_red_item"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/delete"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_L" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_surface"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/list_selector_white"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dongtai_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_icon"
+            android:layout_toRightOf="@id/iv_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_L" />
+
+        <TextView
+            android:id="@+id/tv_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="@string/statuses_by_someone"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_M" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/red_line_bg"
+            android:drawableLeft="@drawable/icon_add"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="@color/font_red"
+            android:textSize="@dimen/font_M" />
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

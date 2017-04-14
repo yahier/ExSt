@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light"
+    android:paddingBottom="@dimen/padding_top"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <com.stbl.stbl.widget.SearchBar
+        android:id="@+id/bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar_search"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/bg_gray_mid"
+        android:dividerHeight="@dimen/divider_1px"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar_search" />
+
+    <com.stbl.stbl.widget.EmptyView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:emptyImage="@drawable/icon_kong"
+        app:emptyText="@string/me_not_find_relate_demand" />
+
+
+</RelativeLayout>

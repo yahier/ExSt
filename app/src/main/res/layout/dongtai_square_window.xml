@@ -1,0 +1,152 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99999999"
+    android:orientation="vertical" >
+
+    <!-- 真实内容层 -->
+
+    <LinearLayout
+        android:id="@+id/linContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选"
+                android:textColor="@color/theme_black_a"
+                android:textSize="@dimen/font_size_list" />
+
+            <TextView
+                android:id="@+id/tvWindowSelectedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/theme_black_a"
+                android:textSize="@dimen/font_size_list" />
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="想看的用户"
+            android:textColor="#444"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/gender_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gender_all"
+                style="@style/dongtai_square_window_text"
+                android:background="@drawable/dongtai_square_window_text_selector"
+                android:button="@null"
+                android:checked="true"
+                android:text="全部"
+                android:textColor="@drawable/square_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/gender_boy"
+                style="@style/dongtai_square_window_text"
+                android:background="@drawable/dongtai_square_window_text_selector"
+                android:button="@null"
+                android:text="  男  "
+                android:textColor="@drawable/square_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/gender_girl"
+                style="@style/dongtai_square_window_text"
+                android:background="@drawable/dongtai_square_window_text_selector"
+                android:button="@null"
+                android:text="  女  "
+                android:textColor="@drawable/square_text_color_selector" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="地区"
+            android:textColor="#444"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/field_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/field_all"
+                style="@style/dongtai_square_window_text"
+                android:background="@drawable/dongtai_square_window_text_selector"
+                android:button="@null"
+                android:checked="true"
+                android:text="全部"
+                android:textColor="@drawable/square_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/field_city"
+                style="@style/dongtai_square_window_text"
+                android:background="@drawable/dongtai_square_window_text_selector"
+                android:button="@null"
+                android:text="同城"
+                android:textColor="@drawable/square_text_color_selector" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#545454"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/line_vertical"
+                android:background="@color/theme_brown" />
+
+            <Button
+                android:id="@+id/dialog_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/theme_red_bg"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

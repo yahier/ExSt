@@ -1,0 +1,77 @@
+<!-- 只用作整个文件复制用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="@color/gray1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/window_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_delect_close" />
+    </FrameLayout>
+
+    <!-- 第二个 -->
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/window_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，你确定要放弃购买这几件商品吗?"
+            android:textColor="@color/gray1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/window_cancel"
+                style="@style/common_gray_btn"
+                android:layout_marginRight="50dp"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/window_ok"
+                style="@style/common_red_btn"
+                android:layout_marginLeft="50dp"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 第二个 -->
+
+</LinearLayout>

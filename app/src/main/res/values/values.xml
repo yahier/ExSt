@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionBarWidgetTheme" format="reference" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar" parent="android:Widget.Holo.Light.ActionBar"></style>
+    <style name="Widget.AppCompat.Light.ActionBar" parent="Widget.AppCompat.Light.Base.ActionBar"></style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="android:TextAppearance.Holo.Widget.ActionBar.Title"></style>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.Base.ActionBar.Title"></style>
+</resources>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colors_7f000000" >
+
+    <RelativeLayout
+        android:id="@+id/popup_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:background="@color/bgs_white_five_round_style"
+        android:paddingBottom="@dimen/dp_8" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_45"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/send_gift"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/none_color"
+            android:src="@drawable/icon_close_window"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_below="@id/title_tv"
+            android:background="@color/line_bgs" />
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:cacheColorHint="@color/none_color"
+            android:fadingEdge="none"
+            android:numColumns="3"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:listSelector="@color/none_color" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/popup_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/popup_parent_layout"
+        android:background="@color/none_color" />
+
+    <Button
+        android:id="@+id/popup_cancel2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/popup_parent_layout"
+        android:background="@color/none_color" />
+
+</RelativeLayout>

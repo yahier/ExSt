@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_youhuiquan"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="400px"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="30px"
+	    android:background="@drawable/bg_youhuiquan"
+	    android:orientation="vertical" >
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="25px"
+	        android:layout_marginRight="20px"
+	        android:layout_marginLeft="20px"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:textSize="20sp"
+	            android:textColor="@color/black"	            
+	            android:text="单品" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:textSize="18sp"
+	            android:textColor="@color/gray_text"
+	            android:text="2015-12-22到期" />
+	    </RelativeLayout>
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="60px"
+			android:layout_marginRight="20px"
+	        android:layout_marginLeft="20px"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="50sp"
+	            android:textColor="@color/mall_goods_price"
+	            android:text="¥10.00" />
+			<ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/test_right" />
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
